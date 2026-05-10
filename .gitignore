@@ -51,3 +51,7 @@ build/
 *.ai
 *.sketch
 *.fig
+
+# Token push client GFE (local only)
+.env.push
+push.sh

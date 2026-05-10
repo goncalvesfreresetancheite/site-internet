@@ -531,6 +531,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </section>
 
+<!-- Bandeau partenaires -->
+<section class="py-8 bg-gray-50 border-y border-gray-200 overflow-hidden">
+    <p class="text-center text-xs font-bold text-gray-400 uppercase tracking-[0.2em] mb-6">Ils nous font confiance</p>
+    <div class="relative overflow-hidden">
+        <div class="marquee-partenaires flex items-center gap-20" style="width: max-content;">
+            <!-- Set 1 -->
+            <img src="nospartenaires/edf.png" alt="EDF" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+            <img src="nospartenaires/vinci-immobilier.svg" alt="Vinci Immobilier" class="h-8 object-contain opacity-50 hover:opacity-80 transition-all duration-300" style="filter: brightness(0);">
+            <img src="nospartenaires/savoisienne-habitat.png" alt="Savoisienne Habitat" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+            <img src="nospartenaires/opac-savoie.png" alt="OPAC de la Savoie" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+            <img src="nospartenaires/sata-alpe-huez.png" alt="SATA Alpe d'Huez" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+            <!-- Set 2 (duplicate pour boucle infinie) -->
+            <img src="nospartenaires/edf.png" alt="EDF" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+            <img src="nospartenaires/vinci-immobilier.svg" alt="Vinci Immobilier" class="h-8 object-contain opacity-50 hover:opacity-80 transition-all duration-300" style="filter: brightness(0);">
+            <img src="nospartenaires/savoisienne-habitat.png" alt="Savoisienne Habitat" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+            <img src="nospartenaires/opac-savoie.png" alt="OPAC de la Savoie" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+            <img src="nospartenaires/sata-alpe-huez.png" alt="SATA Alpe d'Huez" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+        </div>
+    </div>
+</section>
+<style>
+.marquee-partenaires { animation: marquee-scroll 22s linear infinite; }
+.marquee-partenaires:hover { animation-play-state: paused; }
+@keyframes marquee-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+</style>
+
 <!-- SECTION SERVICES CORRIGÉE - Palette bleue GFE uniquement -->
 <section id="services" class="py-12 md:py-16 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 relative overflow-hidden animate-on-scroll">
     
