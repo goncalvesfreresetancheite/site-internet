@@ -456,16 +456,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="accueil" class="gradient-hero min-h-screen flex items-center relative overflow-hidden pt-24 md:pt-0">
 
     
-    <!-- Image de placeholder (première frame vidéo) - VISIBLE DÈS LE DÉBUT -->
-    <div id="video-placeholder" class="absolute inset-0 w-full h-full z-0" style="background-image: url('images/edf-seyssel/edf-01-verriere.jpg'); background-size: cover; background-position: center; filter: brightness(0.65);"></div>
-    
-    <!-- Vidéo de fond - chargement optimisé -->
-    <video id="hero-video" muted loop playsinline preload="metadata" class="absolute inset-0 w-full h-full object-cover z-0 opacity-0 transition-opacity duration-500" style="object-position: center; filter: brightness(0.65);">
+    <!-- Vidéo de fond -->
+    <video id="hero-video" autoplay muted loop playsinline preload="auto" class="absolute inset-0 w-full h-full object-cover z-0" style="object-position: center; filter: brightness(0.75);">
         <source src="video-edf-hero.mp4" type="video/mp4">
     </video>
-    
-    <!-- Filtre bleu PERMANENT par-dessus tout (toujours visible) -->
-    <div class="absolute inset-0 z-[1] pointer-events-none" style="background: linear-gradient(135deg, rgba(30, 58, 138, 0.92) 0%, rgba(30, 58, 138, 0.88) 50%, rgba(30, 58, 138, 0.92) 100%);"></div>
+
+    <!-- Filtre bleu par-dessus -->
+    <div class="absolute inset-0 z-[1] pointer-events-none" style="background: linear-gradient(135deg, rgba(30, 58, 138, 0.70) 0%, rgba(30, 58, 138, 0.62) 50%, rgba(30, 58, 138, 0.70) 100%);"></div>
     
     <div class="container mx-auto px-6 relative z-10">
         <div class="max-w-6xl mx-auto">
@@ -1363,41 +1360,11 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     }, 2000);
 });
 
-// Optimisation chargement vidéo - Lazy load après chargement de la page
-window.addEventListener('load', function() {
-    const video = document.getElementById('hero-video');
-    const placeholder = document.getElementById('video-placeholder');
-    
-    // Pas de vidéo sur mobile pour économiser la bande passante
-    if (window.innerWidth < 768) {
-        return; // La vidéo reste masquée, l'image poster reste visible
-    }
-    
-    // Charger et lancer la vidéo après 1 seconde
-    setTimeout(function() {
-        video.load(); // Commence le téléchargement
-        
-        video.addEventListener('canplay', function() {
-            video.play().then(function() {
-                // Fade in de la vidéo une fois prête
-                video.style.opacity = '1';
-                
-                // Cacher le placeholder quand la vidéo joue (fade out lent pour transition douce)
-                if (placeholder) {
-                    placeholder.style.transition = 'opacity 1s ease';
-                    placeholder.style.opacity = '0';
-                    setTimeout(function() {
-                        placeholder.style.display = 'none';
-                    }, 1000);
-                }
-                
-                console.log('Vidéo lancée avec succès');
-            }).catch(function(error) {
-                console.log('Autoplay bloqué:', error);
-            });
-        }, { once: true });
-    }, 1000); // Attendre 1 seconde pour ne pas bloquer le chargement initial
-});
+// Sur mobile, masquer la vidéo pour économiser la bande passante
+if (window.innerWidth < 768) {
+    var heroVideo = document.getElementById('hero-video');
+    if (heroVideo) heroVideo.style.display = 'none';
+}
 
 // Menu mobile burger
 document.addEventListener('DOMContentLoaded', function() {
