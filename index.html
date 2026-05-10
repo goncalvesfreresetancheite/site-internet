@@ -532,32 +532,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- Bandeau partenaires -->
-<section class="py-8 bg-gray-50 border-y border-gray-200 overflow-hidden">
-    <p class="text-center text-xs font-bold text-gray-400 uppercase tracking-[0.2em] mb-6">Ils nous font confiance</p>
+<section class="py-10 bg-white border-y border-gray-100 overflow-hidden">
+    <div class="flex items-center gap-5 max-w-xs mx-auto mb-8 px-6">
+        <div class="flex-1 h-px bg-gradient-to-r from-transparent to-gray-300"></div>
+        <p class="text-[11px] font-semibold text-gray-400 uppercase tracking-[0.3em] whitespace-nowrap" style="font-family:'Sora',sans-serif;">Ils nous font confiance</p>
+        <div class="flex-1 h-px bg-gradient-to-l from-transparent to-gray-300"></div>
+    </div>
     <div class="relative overflow-hidden">
-        <div class="marquee-partenaires flex items-center gap-20" style="width: max-content;">
+        <div class="marquee-partenaires flex items-center" style="width:max-content; gap: 80px;">
             <!-- Set 1 -->
-            <img src="nospartenaires/edf.png" alt="EDF" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-            <img src="nospartenaires/vinci-immobilier.svg" alt="Vinci Immobilier" class="h-8 object-contain opacity-50 hover:opacity-80 transition-all duration-300" style="filter: brightness(0);">
-            <img src="nospartenaires/savoisienne-habitat.png" alt="Savoisienne Habitat" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-            <img src="nospartenaires/opac-savoie.png" alt="OPAC de la Savoie" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-            <img src="nospartenaires/sata-alpe-huez.png" alt="SATA Alpe d'Huez" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-            <!-- Set 2 (duplicate pour boucle infinie) -->
-            <img src="nospartenaires/edf.png" alt="EDF" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-            <img src="nospartenaires/vinci-immobilier.svg" alt="Vinci Immobilier" class="h-8 object-contain opacity-50 hover:opacity-80 transition-all duration-300" style="filter: brightness(0);">
-            <img src="nospartenaires/savoisienne-habitat.png" alt="Savoisienne Habitat" class="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-            <img src="nospartenaires/opac-savoie.png" alt="OPAC de la Savoie" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-            <img src="nospartenaires/sata-alpe-huez.png" alt="SATA Alpe d'Huez" class="h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+            <img src="nospartenaires/edf.svg"               alt="EDF"                class="logo-partenaire h-10">
+            <img src="nospartenaires/vinci-immobilier.svg"  alt="Vinci Immobilier"   class="logo-partenaire h-8"  style="filter:brightness(0) opacity(0.55);">
+            <img src="nospartenaires/savoisienne-habitat.png" alt="Savoisienne Habitat" class="logo-partenaire h-12">
+            <img src="nospartenaires/opac-savoie.png"       alt="OPAC de la Savoie" class="logo-partenaire h-10">
+            <img src="nospartenaires/sata-alpe-huez.png"    alt="SATA Alpe d'Huez"  class="logo-partenaire h-9">
+            <!-- Set 2 (boucle infinie) -->
+            <img src="nospartenaires/edf.svg"               alt="EDF"                class="logo-partenaire h-10">
+            <img src="nospartenaires/vinci-immobilier.svg"  alt="Vinci Immobilier"   class="logo-partenaire h-8"  style="filter:brightness(0) opacity(0.55);">
+            <img src="nospartenaires/savoisienne-habitat.png" alt="Savoisienne Habitat" class="logo-partenaire h-12">
+            <img src="nospartenaires/opac-savoie.png"       alt="OPAC de la Savoie" class="logo-partenaire h-10">
+            <img src="nospartenaires/sata-alpe-huez.png"    alt="SATA Alpe d'Huez"  class="logo-partenaire h-9">
         </div>
     </div>
 </section>
 <style>
-.marquee-partenaires { animation: marquee-scroll 22s linear infinite; }
+.logo-partenaire { object-fit:contain; opacity:0.55; filter:grayscale(40%); transition:all .35s ease; }
+.logo-partenaire:hover { opacity:1; filter:grayscale(0%); }
+/* Vinci est blanc → on garde le filter brightness(0) inline, on surcharge opacity au hover */
+img[alt="Vinci Immobilier"].logo-partenaire { filter:brightness(0) opacity(0.55); }
+img[alt="Vinci Immobilier"].logo-partenaire:hover { filter:brightness(0) opacity(0.9); }
+.marquee-partenaires { animation: marquee-scroll 25s linear infinite; }
 .marquee-partenaires:hover { animation-play-state: paused; }
-@keyframes marquee-scroll {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
+@keyframes marquee-scroll { 0% { transform:translateX(0); } 100% { transform:translateX(-50%); } }
 </style>
 
 <!-- SECTION SERVICES CORRIGÉE - Palette bleue GFE uniquement -->
