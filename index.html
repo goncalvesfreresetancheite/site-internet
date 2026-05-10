@@ -532,36 +532,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- Bandeau partenaires -->
-<section class="py-10 bg-white border-y border-gray-100 overflow-hidden">
-    <div class="flex items-center gap-5 max-w-xs mx-auto mb-8 px-6">
-        <div class="flex-1 h-px bg-gradient-to-r from-transparent to-gray-300"></div>
-        <p class="text-[11px] font-semibold text-gray-400 uppercase tracking-[0.3em] whitespace-nowrap" style="font-family:'Sora',sans-serif;">Ils nous font confiance</p>
-        <div class="flex-1 h-px bg-gradient-to-l from-transparent to-gray-300"></div>
-    </div>
+<section class="py-12 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 overflow-hidden">
+    <h2 class="text-4xl md:text-5xl font-black text-white text-center mb-10" style="font-family:'Sora',sans-serif;">Ils nous font confiance</h2>
     <div class="relative overflow-hidden">
-        <div class="marquee-partenaires flex items-center" style="width:max-content; gap: 80px;">
+        <div class="marquee-partenaires flex items-center" style="width:max-content; gap: 90px; padding: 0 45px;">
             <!-- Set 1 -->
-            <img src="nospartenaires/edf.svg"               alt="EDF"                class="logo-partenaire h-10">
-            <img src="nospartenaires/vinci-immobilier.svg"  alt="Vinci Immobilier"   class="logo-partenaire h-8"  style="filter:brightness(0) opacity(0.55);">
+            <img src="nospartenaires/edf.svg"                alt="EDF"                class="logo-partenaire h-10">
+            <img src="nospartenaires/vinci-immobilier.svg"   alt="Vinci Immobilier"   class="logo-partenaire h-8">
             <img src="nospartenaires/savoisienne-habitat.png" alt="Savoisienne Habitat" class="logo-partenaire h-12">
-            <img src="nospartenaires/opac-savoie.png"       alt="OPAC de la Savoie" class="logo-partenaire h-10">
-            <img src="nospartenaires/sata-alpe-huez.png"    alt="SATA Alpe d'Huez"  class="logo-partenaire h-9">
+            <img src="nospartenaires/opac-savoie.png"        alt="OPAC de la Savoie"  class="logo-partenaire h-10">
+            <img src="nospartenaires/sata-alpe-huez.png"     alt="SATA Alpe d'Huez"   class="logo-partenaire h-9">
+            <img src="nospartenaires/sde@3x-100.jpg"         alt="Groupe EOS SDE"      class="logo-partenaire h-10">
             <!-- Set 2 (boucle infinie) -->
-            <img src="nospartenaires/edf.svg"               alt="EDF"                class="logo-partenaire h-10">
-            <img src="nospartenaires/vinci-immobilier.svg"  alt="Vinci Immobilier"   class="logo-partenaire h-8"  style="filter:brightness(0) opacity(0.55);">
+            <img src="nospartenaires/edf.svg"                alt="EDF"                class="logo-partenaire h-10">
+            <img src="nospartenaires/vinci-immobilier.svg"   alt="Vinci Immobilier"   class="logo-partenaire h-8">
             <img src="nospartenaires/savoisienne-habitat.png" alt="Savoisienne Habitat" class="logo-partenaire h-12">
-            <img src="nospartenaires/opac-savoie.png"       alt="OPAC de la Savoie" class="logo-partenaire h-10">
-            <img src="nospartenaires/sata-alpe-huez.png"    alt="SATA Alpe d'Huez"  class="logo-partenaire h-9">
+            <img src="nospartenaires/opac-savoie.png"        alt="OPAC de la Savoie"  class="logo-partenaire h-10">
+            <img src="nospartenaires/sata-alpe-huez.png"     alt="SATA Alpe d'Huez"   class="logo-partenaire h-9">
+            <img src="nospartenaires/sde@3x-100.jpg"         alt="Groupe EOS SDE"      class="logo-partenaire h-10">
         </div>
     </div>
 </section>
 <style>
-.logo-partenaire { object-fit:contain; opacity:0.55; filter:grayscale(40%); transition:all .35s ease; }
-.logo-partenaire:hover { opacity:1; filter:grayscale(0%); }
-/* Vinci est blanc → on garde le filter brightness(0) inline, on surcharge opacity au hover */
-img[alt="Vinci Immobilier"].logo-partenaire { filter:brightness(0) opacity(0.55); }
-img[alt="Vinci Immobilier"].logo-partenaire:hover { filter:brightness(0) opacity(0.9); }
-.marquee-partenaires { animation: marquee-scroll 25s linear infinite; }
+.logo-partenaire { object-fit:contain; filter:brightness(0) invert(1) opacity(0.6); transition:all .35s ease; }
+.logo-partenaire:hover { filter:brightness(0) invert(1) opacity(1); }
+.marquee-partenaires { animation: marquee-scroll 28s linear infinite; }
 .marquee-partenaires:hover { animation-play-state: paused; }
 @keyframes marquee-scroll { 0% { transform:translateX(0); } 100% { transform:translateX(-50%); } }
 </style>
@@ -975,6 +970,21 @@ img[alt="Vinci Immobilier"].logo-partenaire:hover { filter:brightness(0) opacity
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            <a href="realisation-edf-seyssel.html" class="card-elegant overflow-hidden hover:scale-105 transition-transform duration-300 block relative">
+                <div class="absolute top-3 left-3 z-10">
+                    <span class="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">⚡ En cours</span>
+                </div>
+                <img src="images/edf-seyssel/edf-03-travailleur-riviere.jpg" alt="Centrale EDF Seyssel - Haute-Savoie" class="w-full h-48 md:h-64 object-cover object-center">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Centrale Hydroélectrique Seyssel (74)</h3>
+                    <p class="text-gray-600 mb-4">EDF — Étanchéité toiture-terrasse en bord de rivière, Haute-Savoie</p>
+                    <div class="flex items-center justify-between">
+                        <span class="inline-block bg-yellow-100 text-yellow-800 text-sm font-semibold px-3 py-1 rounded-full">EDF</span>
+                        <span class="text-blue-600 font-semibold text-sm">Voir le projet <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                </div>
+            </a>
+
             <a href="realisation-josephine-baker.html" class="card-elegant overflow-hidden hover:scale-105 transition-transform duration-300 block">
                 <img src="images/josephine-baker-4.jpg" alt="Résidence Joséphine Baker" class="w-full h-48 md:h-64 object-cover">
                 <div class="p-6">
