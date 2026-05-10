@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; background: #f9f9f9; }
+        .header { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 30px 20px; text-align: center; border-radius: 10px 10px 0 0; }
+        .header h1 { margin: 0; font-size: 24px; }
+        .content { background: white; padding: 30px; border-radius: 0 0 10px 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .field { margin-bottom: 20px; border-left: 4px solid #3b82f6; padding-left: 15px; }
+        .field-label { font-weight: bold; color: #1e3a8a; margin-bottom: 5px; font-size: 14px; text-transform: uppercase; }
+        .field-value { color: #333; font-size: 16px; line-height: 1.5; }
+        .footer { text-align: center; margin-top: 30px; padding-top: 20px; border-top: 2px solid #e5e7eb; font-size: 12px; color: #666; }
+        .badge { display: inline-block; background: #3b82f6; color: white; padding: 5px 10px; border-radius: 5px; font-size: 12px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📨 Nouvelle Demande de Devis GFE</h1>
+            <p style="margin: 10px 0 0 0; font-size: 14px;">Source : Site Web GFE 2.0</p>
+        </div>
+        
+        <div class="content">
+            <div class="badge">🆕 Nouveau Contact</div>
+            
+            <div class="field">
+                <div class="field-label">👤 Nom / Société</div>
+                <div class="field-value">{{nom}}</div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">📍 Lieu du chantier</div>
+                <div class="field-value">{{lieu}}</div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">📞 Téléphone</div>
+                <div class="field-value">{{telephone}}</div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">📧 Email</div>
+                <div class="field-value">{{email}}</div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">🏢 Profil</div>
+                <div class="field-value">{{profil}}</div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">🏗️ Type de projet</div>
+                <div class="field-value">{{typeProjet}}</div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">⏰ Délai souhaité</div>
+                <div class="field-value">{{delai}}</div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">📝 Description du projet</div>
+                <div class="field-value">{{description}}</div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">📎 Pièces jointes</div>
+                <div class="field-value">{{attachments}}</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>⏱️ Délai de réponse : 4 jours ouvrés maximum</strong></p>
+            <p style="margin-top: 10px;">
+                Ce message a été envoyé depuis le formulaire de contact du site GFE<br>
+                <a href="https://goncalves-freres-etancheite.fr" style="color: #3b82f6; text-decoration: none;">www.goncalves-freres-etancheite.fr</a>
+            </p>
+            <p style="margin-top: 15px; font-size: 11px; color: #999;">
+                Site créé par <a href="https://site.agencedelombre.fr" style="color: #3b82f6;">Agence de l'Ombre</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

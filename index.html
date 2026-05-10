@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M2TMJ923');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEB95W8NQ5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HEB95W8NQ5');
+    </script>
+    <!-- End Google Analytics 4 -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GFE Étanchéité - Étanchéité Savoie | Auvergne-Rhône-Alpes</title>
+    <meta name="description" content="GFE - Entreprise d'étanchéité en Savoie. Spécialiste zones de montagne et stations de ski. Collectivités, promoteurs, architectes.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Sora', sans-serif; letter-spacing: -0.02em; }
+        :root { --gfe-primary: #1e3a8a; --gfe-secondary: #3b82f6; --gfe-accent: #0ea5e9; }
+        body { background: #ffffff; color: #1e293b; overflow-x: hidden; }
+        .gradient-hero { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%); }
+        .nav-elegant { backdrop-filter: blur(20px); background: rgba(15, 23, 42, 0.9); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+        
+        /* Glassmorphism + Shimmer effect */
+        .card-elegant { 
+            background: rgba(255, 255, 255, 0.95); 
+            backdrop-filter: blur(10px); 
+            border-radius: 20px; 
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08); 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+            border: 1px solid rgba(255, 255, 255, 0.3); 
+            position: relative;
+            overflow: hidden;
+        }
+        .card-elegant::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s ease;
+        }
+        .card-elegant:hover::before { left: 100%; }
+        .card-elegant:hover { transform: translateY(-12px) scale(1.02); box-shadow: 0 30px 60px rgba(59, 130, 246, 0.15); }
+        
+        /* Gouttes d'eau animées */
+
+        
+        .btn-primary { background: linear-gradient(135deg, var(--gfe-secondary), var(--gfe-accent)); color: white; padding: 14px 32px; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3); display: inline-block; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4); }
+        .btn-secondary { background: white; color: var(--gfe-primary); padding: 14px 32px; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; border: 2px solid var(--gfe-primary); display: inline-block; }
+        .btn-secondary:hover { background: var(--gfe-primary); color: white; }
+        .counter { font-size: 3.5rem; font-weight: 900; background: linear-gradient(135deg, var(--gfe-secondary), var(--gfe-accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .service-icon { width: 64px; height: 64px; border-radius: 16px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; }
+        .card-elegant:hover .service-icon { transform: scale(1.1) rotate(5deg); }
+        .zone-tag { display: inline-block; padding: 8px 16px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.875rem; font-weight: 500; color: var(--gfe-primary); transition: all 0.3s ease; text-decoration: none; }
+        .zone-tag:hover { background: var(--gfe-secondary); color: white; border-color: var(--gfe-secondary); }
+        
+        /* 🎮 ANIMATIONS GAMIFIÉES */
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        @keyframes snowfall {
+            from { transform: translateY(-10px); opacity: 1; }
+            to { transform: translateY(100vh); opacity: 0; }
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.2; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.3); }
+        }
+        
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-snowfall { animation: snowfall linear infinite; }
+        .animate-twinkle { animation: twinkle 2s ease-in-out infinite; }
+        
+        /* Carte Interactive 3D */
+        .region-path {
+            cursor: pointer;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .region-path:hover {
+            filter: drop-shadow(0 20px 30px rgba(59, 130, 246, 0.5));
+            transform: translateY(-5px) scale(1.05);
+            fill: #06b6d4 !important;
+        }
+        
+        .region-label {
+            pointer-events: none;
+            font-family: 'Sora', sans-serif;
+        }
+        
+        .map-region:hover .region-path {
+            fill: #0ea5e9 !important;
+        }
+        
+        /* Animation Ping pour les points */
+        /* ✨ ANIMATIONS D'ENTRÉE ÉLÉGANTES */
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(40px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+        
+        @keyframes fadeInDown {
+            from { 
+                opacity: 0; 
+                transform: translateY(-40px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+        
+        @keyframes fadeInLeft {
+            from { 
+                opacity: 0; 
+                transform: translateX(-40px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateX(0); 
+            }
+        }
+        
+        @keyframes fadeInRight {
+            from { 
+                opacity: 0; 
+                transform: translateX(40px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateX(0); 
+            }
+        }
+        
+        @keyframes fadeInScale {
+            from { 
+                opacity: 0; 
+                transform: scale(0.9); 
+            }
+            to { 
+                opacity: 1; 
+                transform: scale(1); 
+            }
+        }
+        
+        /* 🎈 ANIMATION DE FLOTTAISON CONTINUE */
+        @keyframes float {
+            0%, 100% { 
+                transform: translateY(0px); 
+            }
+            50% { 
+                transform: translateY(-20px); 
+            }
+        }
+        
+        @keyframes floatSlow {
+            0%, 100% { 
+                transform: translateY(0px) rotate(0deg); 
+            }
+            50% { 
+                transform: translateY(-15px) rotate(2deg); 
+            }
+        }
+        
+        @keyframes floatReverse {
+            0%, 100% { 
+                transform: translateY(-10px); 
+            }
+            50% { 
+                transform: translateY(10px); 
+            }
+        }
+        
+        /* Classes pour les animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .animate-on-scroll.visible {
+            opacity: 1;
+            animation-fill-mode: forwards;
+        }
+        
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .float-slow {
+            animation: floatSlow 8s ease-in-out infinite;
+        }
+        
+        .float-reverse {
+            animation: floatReverse 7s ease-in-out infinite;
+        }
+        
+        @keyframes ping {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(2);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .ping-animation {
+            animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+            filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.8));
+        }
+        
+        /* Animation entrée pour Nos Expertises */
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+        
+        /* 🎯 ANIMATION REGION AUVERGNE-RA */
+        .region-highlight {
+            background: linear-gradient(120deg, #1e40af 0%, #0ea5e9 25%, #06b6d4 50%, #0ea5e9 75%, #1e40af 100%);
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient-flow 4s ease-in-out infinite;
+            font-weight: 900;
+            position: relative;
+            display: inline-block;
+        }
+        
+        @keyframes gradient-flow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .region-highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb 0%, #06b6d4 50%, #2563eb 100%);
+            background-size: 200% 100%;
+            border-radius: 2px;
+            animation: underline-slide 3s linear infinite;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+        }
+        
+        @keyframes underline-slide {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .expertise-card {
+            opacity: 0;
+            animation-fill-mode: forwards;
+            animation-duration: 1.2s;
+            animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .expertise-card.slide-right {
+            animation-name: slideInRight;
+        }
+        
+        .expertise-card.slide-left {
+            animation-name: slideInLeft;
+        }
+        
+        /* Animations pour les modals */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        .animate-scale-in {
+            animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        /* Bouton retour en haut */
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2TMJ923"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<nav id="navbar" class="fixed top-0 w-full z-50 py-4 nav-elegant">
+    <div class="container mx-auto px-6">
+        <div class="flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="images/logo-gfe.png" alt="GFE Logo" class="h-12">
+            </a>
+            
+            <!-- Menu Desktop -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#accueil" class="text-white hover:text-blue-200 font-medium transition-colors">Accueil</a>
+                <a href="#services" class="text-white hover:text-blue-200 font-medium transition-colors">Services</a>
+                <a href="#zones" class="text-white hover:text-blue-200 font-medium transition-colors">Zones</a>
+                <a href="#realisations" class="text-white hover:text-blue-200 font-medium transition-colors">Réalisations</a>
+                <a href="#blog" class="text-white hover:text-blue-200 font-medium transition-colors">Conseils</a>
+                <a href="#contact" class="btn-primary">Devis Offert</a>
+            </div>
+            
+            <!-- Burger Menu Mobile -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+            <div class="flex flex-col space-y-3">
+                <a href="#accueil" class="text-white hover:text-blue-200 font-medium transition-colors py-2 px-4 rounded hover:bg-white/10">Accueil</a>
+                <a href="#services" class="text-white hover:text-blue-200 font-medium transition-colors py-2 px-4 rounded hover:bg-white/10">Services</a>
+                <a href="#zones" class="text-white hover:text-blue-200 font-medium transition-colors py-2 px-4 rounded hover:bg-white/10">Zones</a>
+                <a href="#realisations" class="text-white hover:text-blue-200 font-medium transition-colors py-2 px-4 rounded hover:bg-white/10">Réalisations</a>
+                <a href="#blog" class="text-white hover:text-blue-200 font-medium transition-colors py-2 px-4 rounded hover:bg-white/10">Conseils</a>
+                <a href="#contact" class="btn-primary text-center">Devis Offert</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section id="accueil" class="gradient-hero min-h-screen flex items-center relative overflow-hidden pt-24 md:pt-0">
+
+    
+    <!-- Image de placeholder (première frame vidéo) - VISIBLE DÈS LE DÉBUT -->
+    <div id="video-placeholder" class="absolute inset-0 w-full h-full z-0" style="background-image: url('video-poster.jpg'); background-size: cover; background-position: center; transform: scaleX(-1) scale(1.3); filter: brightness(0.7);"></div>
+    
+    <!-- Vidéo de fond - chargement optimisé -->
+    <video id="hero-video" muted loop playsinline preload="metadata" class="absolute inset-0 w-full h-full object-cover z-0 opacity-0 transition-opacity duration-500" style="transform: scaleX(-1) scale(1.3); object-position: center; filter: brightness(0.7);">
+        <source src="video-gfe.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Filtre bleu PERMANENT par-dessus tout (toujours visible) -->
+    <div class="absolute inset-0 z-[1] pointer-events-none" style="background: linear-gradient(135deg, rgba(30, 58, 138, 0.92) 0%, rgba(30, 58, 138, 0.88) 50%, rgba(30, 58, 138, 0.92) 100%);"></div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+                <div class="fade-in">
+                    <div class="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-4 md:mb-6">
+                        <span class="text-blue-200 text-sm font-semibold">✓ Depuis 2011</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-4 md:mb-6">
+                        Étanchéité sans soucis en<br/>
+                        <span class="text-blue-300">Auvergne-Rhône-Alpes</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-blue-100 mb-6 md:mb-8 leading-relaxed">
+                        Entreprise spécialisée dans l'étanchéité pour collectivités, promoteurs et architectes. 
+                        <strong>Expertise reconnue en zones de montagne.</strong>
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="btn-primary text-center">
+                            <i class="fas fa-file-alt mr-2"></i> Devis Offert
+                        </a>
+                        <a href="#realisations" class="btn-secondary text-center">
+                            Nos Réalisations
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="slide-up max-w-6xl mx-auto">
+                    <div class="card-elegant p-8 md:p-12 mb-12 md:mb-0">
+                        <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-10 text-center">Nos Références</h3>
+                        <div class="flex flex-wrap justify-center items-center gap-6 md:gap-16">
+                            <div class="text-center min-w-[140px]">
+                                <div class="counter text-5xl md:text-6xl font-black bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent mb-3" id="counter1">16+</div>
+                                <p class="text-gray-600 font-bold text-sm md:text-base">Années d'Expérience</p>
+                            </div>
+                            <div class="text-center min-w-[140px]">
+                                <div class="counter text-5xl md:text-6xl font-black bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent mb-3" id="counter2">467+</div>
+                                <p class="text-gray-600 font-bold text-sm md:text-base">Projets Réalisés</p>
+                            </div>
+                            <div class="text-center min-w-[140px]">
+                                <div class="counter text-5xl md:text-6xl font-black bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent mb-3" id="counter3">94%</div>
+                                <p class="text-gray-600 font-bold text-sm md:text-base">Satisfaction</p>
+                            </div>
+                            <div class="text-center min-w-[160px]">
+                                <div class="counter text-5xl md:text-6xl font-black bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent mb-3" id="counter4">12</div>
+                                <p class="text-gray-600 font-bold text-sm md:text-base">Départements</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Animation scroll indicator (desktop uniquement) -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden md:block z-10">
+        <a href="#services" class="flex flex-col items-center text-white opacity-70 hover:opacity-100 transition-opacity cursor-pointer">
+            <span class="text-sm mb-2 font-medium">Découvrir nos services</span>
+            <div class="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2">
+                <div class="w-1.5 h-3 bg-white rounded-full animate-bounce"></div>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- SECTION SERVICES CORRIGÉE - Palette bleue GFE uniquement -->
+<section id="services" class="py-12 md:py-16 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 relative overflow-hidden animate-on-scroll">
+    
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="text-center mb-10">
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-4" style="font-family: 'Sora', sans-serif;">
+                Nos Expertises
+            </h2>
+            <p class="text-xl text-blue-100 max-w-2xl mx-auto">
+                Solutions complètes d'étanchéité pour professionnels
+            </p>
+        </div>
+        
+        <!-- Grid 4 colonnes avec cards glassmorphism compactes -->
+        <div id="expertise-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+            
+            <!-- Service 1 -->
+            <div class="group relative expertise-card slide-right" style="animation-delay: 0.2s;">
+                <div class="relative backdrop-blur-xl bg-white/10 rounded-2xl p-5 border border-white/20 shadow-2xl transition-all duration-500 hover:transform hover:scale-110 hover:bg-white/15 hover:shadow-blue-500/50 overflow-hidden">
+                    <div class="absolute top-2 right-3 text-4xl font-black text-white opacity-5 pointer-events-none transition-all duration-500 group-hover:opacity-10">01</div>
+                    
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mb-3 shadow-lg transform transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
+                        <i class="fas fa-home text-white text-xl"></i>
+                    </div>
+                    
+                    <h3 class="text-lg font-bold text-white mb-2">Étanchéité Toiture</h3>
+                    <p class="text-blue-100 text-xs leading-relaxed">Toits plats, pentes faibles et toitures-terrasses professionnelles</p>
+                    
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="group relative expertise-card slide-right" style="animation-delay: 0.4s;">
+                <div class="relative backdrop-blur-xl bg-white/10 rounded-2xl p-5 border border-white/20 shadow-2xl transition-all duration-500 hover:transform hover:scale-105 hover:bg-white/15 hover:shadow-cyan-500/50 overflow-hidden">
+                    <div class="absolute top-2 right-3 text-4xl font-black text-white opacity-5 pointer-events-none transition-all duration-500 group-hover:opacity-10">02</div>
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mb-3 shadow-lg transform transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
+                        <i class="fas fa-building text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Étanchéité Terrasse</h3>
+                    <p class="text-blue-100 text-xs leading-relaxed">Terrasses accessibles, circulations piétonnes et espaces techniques</p>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="group relative expertise-card slide-right" style="animation-delay: 0.6s;">
+                <div class="relative backdrop-blur-xl bg-white/10 rounded-2xl p-5 border border-white/20 shadow-2xl transition-all duration-500 hover:transform hover:scale-110 hover:bg-white/15 hover:shadow-blue-500/50 overflow-hidden">
+                    <div class="absolute top-2 right-3 text-4xl font-black text-white opacity-5 pointer-events-none transition-all duration-500 group-hover:opacity-10">03</div>
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mb-3 shadow-lg transform transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
+                        <i class="fas fa-layer-group text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Fondations & Murs</h3>
+                    <p class="text-blue-100 text-xs leading-relaxed">Protection infiltrations souterraines et étanchéité des fondations</p>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+            </div>
+            
+            <!-- Service 4 -->
+            <div class="group relative expertise-card slide-right" style="animation-delay: 0.8s;">
+                <div class="relative backdrop-blur-xl bg-white/10 rounded-2xl p-5 border border-white/20 shadow-2xl transition-all duration-500 hover:transform hover:scale-105 hover:bg-white/15 hover:shadow-blue-600/50 overflow-hidden">
+                    <div class="absolute top-2 right-3 text-4xl font-black text-white opacity-5 pointer-events-none transition-all duration-500 group-hover:opacity-10">04</div>
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mb-3 shadow-lg transform transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
+                        <i class="fas fa-industry text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Bâtiments Industriels</h3>
+                    <p class="text-blue-100 text-xs leading-relaxed">Entrepôts, locaux techniques et infrastructures professionnelles</p>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+            </div>
+            
+            <!-- Service 5 -->
+            <div class="group relative expertise-card slide-left" style="animation-delay: 1.0s;">
+                <div class="relative backdrop-blur-xl bg-white/10 rounded-2xl p-5 border border-white/20 shadow-2xl transition-all duration-500 hover:transform hover:scale-110 hover:bg-white/15 hover:shadow-blue-500/50 overflow-hidden">
+                    <div class="absolute top-2 right-3 text-4xl font-black text-white opacity-5 pointer-events-none transition-all duration-500 group-hover:opacity-10">05</div>
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mb-3 shadow-lg transform transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
+                        <i class="fas fa-search text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Recherche de Fuites</h3>
+                    <p class="text-blue-100 text-xs leading-relaxed">Détection et localisation précise avec diagnostic technique complet</p>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+            </div>
+            
+            <!-- Service 6 -->
+            <div class="group relative expertise-card slide-left" style="animation-delay: 1.2s;">
+                <div class="relative backdrop-blur-xl bg-white/10 rounded-2xl p-5 border border-white/20 shadow-2xl transition-all duration-500 hover:transform hover:scale-105 hover:bg-white/15 hover:shadow-cyan-500/50 overflow-hidden">
+                    <div class="absolute top-2 right-3 text-4xl font-black text-white opacity-5 pointer-events-none transition-all duration-500 group-hover:opacity-10">06</div>
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mb-3 shadow-lg transform transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
+                        <i class="fas fa-tools text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Réfection / Rénovation</h3>
+                    <p class="text-blue-100 text-xs leading-relaxed">Rénovation d'étanchéité existante et remise aux normes complète</p>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+            </div>
+            
+            <!-- Service 7 + 8 FUSIONNÉS : Dalles & Planchers -->
+            <div class="group relative expertise-card slide-left" style="animation-delay: 1.4s;">
+                <div class="relative backdrop-blur-xl bg-white/10 rounded-2xl p-5 border border-white/20 shadow-2xl transition-all duration-500 hover:transform hover:scale-110 hover:bg-white/15 hover:shadow-blue-500/50 overflow-hidden">
+                    <div class="absolute top-2 right-3 text-4xl font-black text-white opacity-5 pointer-events-none transition-all duration-500 group-hover:opacity-10">07</div>
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mb-3 shadow-lg transform transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
+                        <i class="fas fa-th text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Dalles & Planchers</h3>
+                    <p class="text-blue-100 text-xs leading-relaxed">Dallettes céramique, bois ou béton sur plots • Planchers bois terrasses extérieures</p>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+            </div>
+            
+            <!-- Service 8 (anciennement 9) -->
+            <div class="group relative expertise-card slide-left" style="animation-delay: 1.6s;">
+                <div class="relative backdrop-blur-xl bg-white/10 rounded-2xl p-5 border border-white/20 shadow-2xl transition-all duration-500 hover:transform hover:scale-105 hover:bg-white/15 hover:shadow-blue-600/50 overflow-hidden">
+                    <div class="absolute top-2 right-3 text-4xl font-black text-white opacity-5 pointer-events-none transition-all duration-500 group-hover:opacity-10">08</div>
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mb-3 shadow-lg transform transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
+                        <i class="fas fa-droplet text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Étanchéité à Froid</h3>
+                    <p class="text-blue-100 text-xs leading-relaxed">Résine polyuréthane liquide pour formes complexes et rénovations</p>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section id="zones" class="py-12 md:py-16 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden animate-on-scroll">
+    <div class="container mx-auto px-6">
+        
+        <!-- Titre Section -->
+        <div class="text-center mb-10">
+            <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-3">
+                Partout en <span style="background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Auvergne-Rhône-Alpes</span>
+            </h2>
+            <p class="text-lg text-gray-600">De la plaine à la haute montagne • 12 départements couverts</p>
+        </div>
+        
+        <!-- Grille Compacte 12 Départements -->
+        <div class="max-w-5xl mx-auto mb-10">
+            <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    
+                    <a href="etancheite-ain.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">01</div>
+                            <div class="text-xs font-semibold text-gray-700 mt-1">Ain</div>
+                        </div>
+                    </a>
+                    
+                    <a href="etancheite-allier.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">03</div>
+                            <div class="text-xs font-semibold text-gray-700 mt-1">Allier</div>
+                        </div>
+                    </a>
+                    
+                    <a href="etancheite-ardeche.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">07</div>
+                            <div class="text-xs font-semibold text-gray-700 mt-1">Ardèche</div>
+                        </div>
+                    </a>
+                    
+                    <a href="etancheite-cantal.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">15</div>
+                            <div class="text-xs font-semibold text-gray-700 mt-1">Cantal</div>
+                        </div>
+                    </a>
+                    
+                    <a href="etancheite-drome.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">26</div>
+                            <div class="text-xs font-semibold text-gray-700 mt-1">Drôme</div>
+                        </div>
+                    </a>
+                    
+                    <a href="etancheite-isere.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">38</div>
+                            <div class="text-xs font-semibold text-gray-700 mt-1">Isère</div>
+                        </div>
+                    </a>
+                    
+                    <a href="etancheite-loire.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">42</div>
+                            <div class="text-xs font-semibold text-gray-700 mt-1">Loire</div>
+                        </div>
+                    </a>
+                    
+                    <a href="etancheite-haute-loire.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">43</div>
+                            <div class="text-xs font-semibold text-gray-700 mt-1">Haute-Loire</div>
+                        </div>
+                    </a>
+                    
+                    <a href="etancheite-puy-de-dome.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">63</div>
+                            <div class="text-xs font-semibold text-gray-700 mt-1">Puy-de-Dôme</div>
+                        </div>
+                    </a>
+                    
+                    <a href="etancheite-rhone.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">69</div>
+                            <div class="text-xs font-semibold text-gray-700 mt-1">Rhône</div>
+                        </div>
+                    </a>
+                    
+                    <!-- SAVOIE EN VEDETTE -->
+                    <a href="etancheite-savoie.html" class="dept-card group relative p-4 bg-gradient-to-br from-amber-100 to-orange-100 hover:from-amber-200 hover:to-orange-200 rounded-xl border-2 border-amber-400 hover:border-amber-500 transition-all duration-300 hover:scale-110 hover:shadow-2xl">
+                        <div class="absolute -top-2 -right-2 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center shadow-lg" style="animation: pulse 2s ease-in-out infinite;">
+                            <i class="fas fa-star text-white text-xs"></i>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-amber-600 group-hover:scale-110 transition-transform">73</div>
+                            <div class="text-xs font-bold text-amber-700 mt-1">Savoie</div>
+                            <div class="text-[10px] text-amber-600 mt-0.5">🏢 Siège</div>
+                        </div>
+                    </a>
+                    
+                    <a href="etancheite-haute-savoie.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">74</div>
+                            <div class="text-xs font-semibold text-gray-700 mt-1">Haute-Savoie</div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Liens Rapides Villes & Stations -->
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-6">
+                
+                <!-- Villes Principales -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-city text-cyan-600 mr-2"></i>
+                        Villes Principales
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="etancheur-annecy.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
+                            <span>Annecy</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheur-chambery.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
+                            <span>Chambéry</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheur-grenoble.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
+                            <span>Grenoble</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheur-lyon.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
+                            <span>Lyon</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheur-albertville.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
+                            <span>Albertville</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheur-aix-les-bains.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
+                            <span>Aix-les-Bains</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheur-valence.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
+                            <span>Valence</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheur-saint-etienne.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
+                            <span>Saint-Étienne</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Stations de Ski -->
+                <div class="bg-gradient-to-br from-blue-900 to-blue-700 rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center">
+                        <i class="fas fa-mountain text-cyan-300 mr-2"></i>
+                        Stations de Ski
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="etancheite-les-2-alpes.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
+                            <span>Les 2 Alpes</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheite-courchevel.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
+                            <span>Courchevel</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheite-meribel.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
+                            <span>Méribel</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheite-la-plagne.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
+                            <span>La Plagne</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheite-alpe-huez.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
+                            <span>Alpe d'Huez</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheite-tignes.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
+                            <span>Tignes</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheite-val-thorens.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
+                            <span>Val Thorens</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheite-les-arcs.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
+                            <span>Les Arcs</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheite-megeve.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
+                            <span>Megève</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                        <a href="etancheite-chamonix.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
+                            <span>Chamonix</span>
+                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section class="py-12 md:py-16 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden animate-on-scroll">
+    <!-- Pattern décoratif -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-300 rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="text-center mb-8 md:mb-12">
+            <h2 class="text-3xl md:text-5xl font-black text-white mb-3 md:mb-4">Notre Méthode</h2>
+            <p class="text-base md:text-xl text-blue-100 max-w-2xl mx-auto">
+                Un processus éprouvé pour des résultats garantis
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+            <div class="relative float-animation">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 hover:bg-white/15 transition-all duration-300 border border-white/20">
+                    <div class="flex items-center mb-4 md:mb-6">
+                        <div class="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-white flex items-center justify-center shadow-xl">
+                            <span class="text-2xl md:text-3xl font-black text-blue-600">1</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Diagnostic</h3>
+                    <p class="text-blue-100 text-sm leading-relaxed">Analyse approfondie de vos besoins et des contraintes techniques de votre projet</p>
+                </div>
+            </div>
+            
+            <div class="relative float-slow">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 hover:bg-white/15 transition-all duration-300 border border-white/20">
+                    <div class="flex items-center mb-4 md:mb-6">
+                        <div class="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-white flex items-center justify-center shadow-xl">
+                            <span class="text-2xl md:text-3xl font-black text-blue-600">2</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Proposition</h3>
+                    <p class="text-blue-100 text-sm leading-relaxed">Devis détaillé avec solution technique adaptée et planning de réalisation précis</p>
+                </div>
+            </div>
+            
+            <div class="relative float-reverse">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 hover:bg-white/15 transition-all duration-300 border border-white/20">
+                    <div class="flex items-center mb-4 md:mb-6">
+                        <div class="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br from-white to-blue-100 flex items-center justify-center shadow-xl">
+                            <span class="text-2xl md:text-3xl font-black text-blue-600">3</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Réalisation</h3>
+                    <p class="text-blue-100 text-sm leading-relaxed">Exécution par nos équipes qualifiées avec suivi en temps réel et garanties</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-8 md:mt-12">
+            <a href="#contact" class="inline-block bg-white text-blue-900 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-blue-50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105">
+                Lancer mon projet <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="realisations" class="py-12 md:py-16 bg-gray-50 animate-on-scroll">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">Nos dernières réalisations</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Découvrez nos projets dans les secteurs tertiaire, industriel et collectivités
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            <a href="realisation-josephine-baker.html" class="card-elegant overflow-hidden hover:scale-105 transition-transform duration-300 block">
+                <img src="images/josephine-baker-4.jpg" alt="Résidence Joséphine Baker" class="w-full h-48 md:h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Résidence Joséphine Baker (38)</h3>
+                    <p class="text-gray-600 mb-4">CROUS - 500 logements étudiants, Campus Condillac</p>
+                    <div class="flex items-center justify-between">
+                        <span class="inline-block bg-red-100 text-red-800 text-sm font-semibold px-3 py-1 rounded-full">CROUS</span>
+                        <span class="text-blue-600 font-semibold text-sm">Voir le projet <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="realisation-jandri-les-2-alpes.html" class="card-elegant overflow-hidden hover:scale-105 transition-transform duration-300 block">
+                <img src="images/jandri-1-les-2-alpes.jpg" alt="Jandri 1 Les Deux Alpes" class="w-full h-48 md:h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Jandri 1, 3 et 4 - Les 2 Alpes (38)</h3>
+                    <p class="text-gray-600 mb-4">Résidences SATA Group - Étanchéité haute altitude 1650-3200m</p>
+                    <div class="flex items-center justify-between">
+                        <span class="inline-block bg-orange-100 text-orange-800 text-sm font-semibold px-3 py-1 rounded-full">SATA Group</span>
+                        <span class="text-blue-600 font-semibold text-sm">Voir le projet <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="realisation-student-factory.html" class="card-elegant overflow-hidden hover:scale-105 transition-transform duration-300 block">
+                <img src="images/student-factory-gieres-1.jpg" alt="Student Factory Gières" class="w-full h-48 md:h-64 object-cover object-center">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Student Factory - Gières (38)</h3>
+                    <p class="text-gray-600 mb-4">Résidence étudiante VINCI IMMOBILIER - Étanchéité toiture-terrasse</p>
+                    <div class="flex items-center justify-between">
+                        <span class="inline-block bg-indigo-100 text-indigo-800 text-sm font-semibold px-3 py-1 rounded-full">VINCI IMMOBILIER</span>
+                        <span class="text-blue-600 font-semibold text-sm">Voir le projet <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-8 md:py-12 bg-gradient-to-br from-blue-950 via-blue-900 to-gray-900 relative overflow-hidden animate-on-scroll">
+    <!-- Pattern décoratif amélioré -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-400 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-cyan-400 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-500 rounded-full blur-3xl"></div>
+    </div>
+    
+    <!-- Grille en arrière-plan pour plus de texture -->
+    <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px); background-size: 50px 50px;"></div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-4">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-2 drop-shadow-lg" style="color: #60a5fa;">Demandez Votre Devis Offert</h2>
+                <p class="text-lg sm:text-xl md:text-2xl font-bold drop-shadow-lg" style="color: #1e3a8a; text-shadow: 2px 2px 4px rgba(255,255,255,0.8), 0 0 10px rgba(255,255,255,0.5); background: rgba(255,255,255,0.3); padding: 8px 16px; border-radius: 12px; display: inline-block;">
+                    ⏱️ Réponse personnalisée sous 4 jours ouvrés
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-2xl p-4 sm:p-6">
+                <form id="contact-form" action="https://formsubmit.co/ajax/gfe-etancheite@hotmail.fr" method="POST" class="space-y-3">
+                    <!-- FormSubmit AJAX : Simple et Fonctionnel -->
+                    <input type="hidden" name="_subject" value="Demande devis site 2">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_cc" value="hello@agencedelombre.fr">
+                    
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-1.5 text-sm">Nom / Société *</label>
+                            <input type="text" name="nom" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all text-sm" placeholder="Votre nom">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-1.5 text-sm">Téléphone *</label>
+                            <input type="tel" name="telephone" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all text-sm" placeholder="06 XX XX XX XX">
+                        </div>
+                    </div>
+                    
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-1.5 text-sm">Email *</label>
+                            <input type="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all text-sm" placeholder="votre@email.fr">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-1.5 text-sm">Lieu du chantier *</label>
+                            <input type="text" name="lieu" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all text-sm" placeholder="Ville / Département">
+                        </div>
+                    </div>
+                    
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-1.5 text-sm">Vous êtes *</label>
+                            <select name="profil" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all text-sm">
+                                <option value="">Profil</option>
+                                <option value="collectivite">Collectivité</option>
+                                <option value="promoteur">Promoteur</option>
+                                <option value="architecte">Architecte</option>
+                                <option value="syndic">Syndic</option>
+                                <option value="entreprise">Entreprise</option>
+                                <option value="particulier">Particulier</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-1.5 text-sm">Type de projet *</label>
+                            <select name="type_projet" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all text-sm">
+                                <option value="">Sélectionner</option>
+                                <option value="toiture">Étanchéité toiture</option>
+                                <option value="terrasse">Étanchéité terrasse</option>
+                                <option value="fondations">Fondations</option>
+                                <option value="industriel">Bâtiment industriel</option>
+                                <option value="fuites">Recherche de fuites</option>
+                                <option value="renovation">Rénovation</option>
+                                <option value="dalles">Dalles sur plots</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-1.5 text-sm">Délai souhaité *</label>
+                        <select name="delai" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all text-sm">
+                            <option value="">Sélectionner</option>
+                            <option value="urgent">Urgent</option>
+                            <option value="1-mois">Dans 1 mois</option>
+                            <option value="2-mois">Dans 2 mois</option>
+                            <option value="3-mois-plus">+ de 3 mois</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-1.5 text-sm">Décrivez votre projet *</label>
+                        <textarea name="description" required rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 resize-none transition-all text-sm" placeholder="Surface, localisation, contraintes..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary w-full text-center text-base sm:text-lg py-3">
+                        <i class="fas fa-paper-plane mr-2"></i> Recevoir mon Devis Offert
+                    </button>
+                    
+                    <p class="text-xs text-gray-500 text-center mt-2">
+                        <i class="fas fa-clock mr-1"></i> Réponse sous 4 jours ouvrés • 
+                        <i class="fas fa-shield-alt ml-2 mr-1"></i> Données sécurisées
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="py-12 md:py-16 bg-white animate-on-scroll">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-6 md:mb-8">
+            <h2 class="text-2xl md:text-4xl font-black text-gray-900 mb-3 md:mb-4">Actualités & Conseils en matière d'étanchéité</h2>
+            <p class="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+                Restez informé des dernières techniques et réglementations en matière d'étanchéité
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-4 gap-5 md:gap-6 max-w-7xl mx-auto">
+            <article class="card-elegant overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop" alt="Terrasse infiltration" class="w-full h-40 md:h-48 object-cover">
+                <div class="p-4 md:p-6">
+                    <div class="flex items-center text-xs md:text-sm text-gray-500 mb-2 md:mb-3">
+                        <i class="fas fa-calendar mr-2"></i> 25 mars 2026
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">Terrasse qui fuit en Savoie : 3 solutions avant que ça empire</h3>
+                    <p class="text-sm md:text-base text-gray-600 mb-3 md:mb-4">Les infiltrations d'eau peuvent causer des dégâts considérables. Découvrez comment agir rapidement...</p>
+                    <a href="blog-terrasse-fuit-savoie.html" class="text-blue-600 font-semibold hover:text-blue-800 text-sm md:text-base">Lire la suite →</a>
+                </div>
+            </article>
+            
+            <article class="card-elegant overflow-hidden">
+                <img src="https://www.vendee-etancheite.fr/files/site/data/diaporama/Toiture%20Vegetale/Toiture%20V%C3%A9g%C3%A9tale%20%20(1).jpg" alt="Article" class="w-full h-40 md:h-48 object-cover">
+                <div class="p-4 md:p-6">
+                    <div class="flex items-center text-xs md:text-sm text-gray-500 mb-2 md:mb-3">
+                        <i class="fas fa-calendar mr-2"></i> 12 février 2026
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">Étanchéité en zone montagne : contraintes & solutions 2026</h3>
+                    <p class="text-sm md:text-base text-gray-600 mb-3 md:mb-4">Les spécificités de l'étanchéité en altitude et comment GFE les maîtrise...</p>
+                    <a href="blog-montagne.html" class="text-blue-600 font-semibold hover:text-blue-800 text-sm md:text-base">Lire la suite →</a>
+                </div>
+            </article>
+            
+            <article class="card-elegant overflow-hidden">
+                <img src="https://www.aubacdeau.com/wp-content/uploads/2021/11/ABE-Etancheite-Couvertines-24.jpg" alt="Article" class="w-full h-40 md:h-48 object-cover">
+                <div class="p-4 md:p-6">
+                    <div class="flex items-center text-xs md:text-sm text-gray-500 mb-2 md:mb-3">
+                        <i class="fas fa-calendar mr-2"></i> 28 janvier 2026
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">Dallettes sur plots : guide complet 2026</h3>
+                    <p class="text-sm md:text-base text-gray-600 mb-3 md:mb-4">Tout ce qu'il faut savoir sur les terrasses ventilées et leurs avantages techniques...</p>
+                    <a href="blog-dallettes.html" class="text-blue-600 font-semibold hover:text-blue-800 text-sm md:text-base">Lire la suite →</a>
+                </div>
+            </article>
+            
+            <article class="card-elegant overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop" alt="Réglementations étanchéité" class="w-full h-40 md:h-48 object-cover">
+                <div class="p-4 md:p-6">
+                    <div class="flex items-center text-xs md:text-sm text-gray-500 mb-2 md:mb-3">
+                        <i class="fas fa-calendar mr-2"></i> 18 décembre 2025
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">Nouvelles réglementations étanchéité 2026</h3>
+                    <p class="text-sm md:text-base text-gray-600 mb-3 md:mb-4">Les dernières normes en vigueur pour l'étanchéité des bâtiments professionnels...</p>
+                    <a href="blog-reglementations.html" class="text-blue-600 font-semibold hover:text-blue-800 text-sm md:text-base">Lire la suite →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-5 gap-8 mb-8">
+            <div>
+                <img src="images/logo-gfe.png" alt="GFE Logo" class="h-12 mb-4">
+                <p class="text-gray-400 text-sm">Spécialiste en étanchéité depuis 2011. Expert zones de montagne et stations de ski.</p>
+            </div>
+            
+            <div>
+                <h5 class="font-bold text-white mb-4">Services</h5>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#services" class="hover:text-blue-400 transition-colors">Étanchéité professionnelle</a></li>
+                    <li><a href="#services" class="hover:text-blue-400 transition-colors">Rénovation & diagnostic</a></li>
+                    <li><a href="#services" class="hover:text-blue-400 transition-colors">Dallettes & aménagements</a></li>
+                    <li><a href="#services" class="hover:text-blue-400 transition-colors">Recherche de fuites</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h5 class="font-bold text-white mb-4">Villes</h5>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="etancheur-chambery.html" class="hover:text-blue-400 transition-colors">Chambéry</a></li>
+                    <li><a href="etancheur-annecy.html" class="hover:text-blue-400 transition-colors">Annecy</a></li>
+                    <li><a href="etancheur-grenoble.html" class="hover:text-blue-400 transition-colors">Grenoble</a></li>
+                    <li><a href="etancheur-lyon.html" class="hover:text-blue-400 transition-colors">Lyon</a></li>
+                    <li><a href="etancheur-albertville.html" class="hover:text-blue-400 transition-colors">Albertville</a></li>
+                    <li><a href="etancheur-aix-les-bains.html" class="hover:text-blue-400 transition-colors">Aix-les-Bains</a></li>
+                    <li><a href="etancheur-valence.html" class="hover:text-blue-400 transition-colors">Valence</a></li>
+                    <li><a href="etancheur-saint-etienne.html" class="hover:text-blue-400 transition-colors">Saint-Étienne</a></li>
+                    <li><a href="etancheur-chamonix.html" class="hover:text-blue-400 transition-colors">Chamonix</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h5 class="font-bold text-white mb-4">Départements</h5>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="etancheite-savoie.html" class="hover:text-blue-400 transition-colors">Savoie (73)</a></li>
+                    <li><a href="etancheite-haute-savoie.html" class="hover:text-blue-400 transition-colors">Haute-Savoie (74)</a></li>
+                    <li><a href="etancheite-isere.html" class="hover:text-blue-400 transition-colors">Isère (38)</a></li>
+                    <li><a href="etancheite-rhone.html" class="hover:text-blue-400 transition-colors">Rhône (69)</a></li>
+                    <li><a href="etancheite-ain.html" class="hover:text-blue-400 transition-colors">Ain (01)</a></li>
+                    <li><a href="etancheite-loire.html" class="hover:text-blue-400 transition-colors">Loire (42)</a></li>
+                    <li><a href="etancheite-drome.html" class="hover:text-blue-400 transition-colors">Drôme (26)</a></li>
+                    <li><a href="etancheite-ardeche.html" class="hover:text-blue-400 transition-colors">Ardèche (07)</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h5 class="font-bold text-white mb-4">Contact</h5>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li>116 Impasse des Rippes<br>73800 Chignin - Savoie</li>
+                    <li><a href="tel:0983482697" class="hover:text-blue-400 transition-colors">09 83 48 26 97</a></li>
+                    <li><a href="mailto:gfe-etancheite@hotmail.fr" class="hover:text-blue-400 transition-colors">gfe-etancheite@hotmail.fr</a></li>
+                </ul>
+                
+                <h5 class="font-bold text-white mb-4 mt-6">Suivez-nous</h5>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/gfe.etancheite/" target="_blank" rel="noopener" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Instagram">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/GoncalvesFreresEtancheite/" target="_blank" rel="noopener" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Facebook">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/goncalves-freres-etancheite/" target="_blank" rel="noopener" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2026 GFE - Goncalves Frères Étanchéité | Tous droits réservés</p>
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6 mt-3 text-sm">
+                <a href="mentions-legales.html" class="text-blue-400 hover:text-blue-300 transition-colors">Mentions Légales</a>
+                <a href="politique-confidentialite.html" class="text-blue-400 hover:text-blue-300 transition-colors">Politique de Confidentialité</a>
+                <a href="politique-cookies.html" class="text-blue-400 hover:text-blue-300 transition-colors">Politique des Cookies</a>
+            </div>
+            <p class="mt-3">Entreprise d'étanchéité depuis 2011 | Siège : 116 Impasse des Rippes, 73800 Chignin - Savoie</p>
+            <p class="mt-4 text-gray-500 text-xs italic">Créé en toute discrétion par <a href="https://site.agencedelombre.fr" target="_blank" rel="noopener" class="text-gray-400 hover:text-blue-900 transition-colors underline">l'Agence de L'Ombre</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bouton Retour en Haut -->
+<button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-14 h-14 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full shadow-2xl hover:shadow-blue-500/50 flex items-center justify-center transition-all duration-300 hover:scale-110 group">
+    <i class="fas fa-arrow-up text-xl group-hover:animate-bounce"></i>
+</button>
+
+<script>
+// Navbar toujours visible avec fond sombre dès le chargement
+
+// Smooth scroll pour les ancres
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+function animateCounter(id, target, duration = 4000) {
+    const element = document.getElementById(id);
+    let current = 0;
+    const increment = target / (duration / 16);
+    
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            current = target;
+            clearInterval(timer);
+        }
+        
+        if (id === 'counter4') {
+            element.textContent = Math.floor(current).toLocaleString('fr-FR');
+        } else {
+            element.textContent = Math.floor(current) + (id === 'counter3' ? '%' : '+');
+        }
+    }, 16);
+}
+
+const observerOptions = {
+    threshold: 0.5,
+    rootMargin: '0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateCounter('counter1', 15);
+            animateCounter('counter2', 467);
+            animateCounter('counter3', 94);
+            animateCounter('counter4', 12);
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+const heroSection = document.querySelector('#accueil');
+if (heroSection) observer.observe(heroSection);
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const btn = this.querySelector('button[type="submit"]');
+    const originalText = btn.innerHTML;
+    
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Envoi en cours...';
+    btn.disabled = true;
+    
+    setTimeout(() => {
+        btn.innerHTML = '<i class="fas fa-check mr-2"></i> Demande envoyée !';
+        btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+        
+        setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+            btn.style.background = '';
+            this.reset();
+        }, 3000);
+    }, 2000);
+});
+
+// Optimisation chargement vidéo - Lazy load après chargement de la page
+window.addEventListener('load', function() {
+    const video = document.getElementById('hero-video');
+    const placeholder = document.getElementById('video-placeholder');
+    
+    // Pas de vidéo sur mobile pour économiser la bande passante
+    if (window.innerWidth < 768) {
+        return; // La vidéo reste masquée, l'image poster reste visible
+    }
+    
+    // Charger et lancer la vidéo après 1 seconde
+    setTimeout(function() {
+        video.load(); // Commence le téléchargement
+        
+        video.addEventListener('canplay', function() {
+            video.play().then(function() {
+                // Fade in de la vidéo une fois prête
+                video.style.opacity = '1';
+                
+                // Cacher le placeholder quand la vidéo joue (fade out lent pour transition douce)
+                if (placeholder) {
+                    placeholder.style.transition = 'opacity 1s ease';
+                    placeholder.style.opacity = '0';
+                    setTimeout(function() {
+                        placeholder.style.display = 'none';
+                    }, 1000);
+                }
+                
+                console.log('Vidéo lancée avec succès');
+            }).catch(function(error) {
+                console.log('Autoplay bloqué:', error);
+            });
+        }, { once: true });
+    }, 1000); // Attendre 1 seconde pour ne pas bloquer le chargement initial
+});
+
+// Menu mobile burger
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Fermer le menu quand on clique sur un lien
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    }
+});
+
+// Animation Nos Expertises au scroll
+const expertiseObserverOptions = {
+    threshold: 0.05,
+    rootMargin: '0px 0px -200px 0px'
+};
+
+const expertiseObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.animation = entry.target.style.animation.replace('paused', 'running');
+        }
+    });
+}, expertiseObserverOptions);
+
+// Observer toutes les cartes d'expertise
+document.addEventListener('DOMContentLoaded', () => {
+    const expertiseCards = document.querySelectorAll('.expertise-card');
+    expertiseCards.forEach(card => {
+        expertiseObserver.observe(card);
+    });
+});
+
+// Bouton retour en haut
+window.addEventListener('scroll', function() {
+    const backToTop = document.getElementById('backToTop');
+    if (backToTop) {
+        if (window.pageYOffset > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    }
+});
+
+// ✨ ANIMATIONS D'ENTRÉE AU SCROLL - Système élégant et discret
+document.addEventListener('DOMContentLoaded', function() {
+    // Configuration de l'observeur d'intersection
+    const animationObserverOptions = {
+        threshold: 0.15, // Se déclenche quand 15% de l'élément est visible
+        rootMargin: '0px 0px -50px 0px' // Déclenche un peu avant que l'élément soit complètement visible
+    };
+    
+    // Créer l'observeur
+    const animationObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                // Ajouter un léger délai pour chaque élément pour un effet en cascade
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                    
+                    // Déterminer quelle animation appliquer selon la section
+                    const sectionId = entry.target.id;
+                    
+                    if (sectionId === 'services') {
+                        entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                    } else if (sectionId === 'zones') {
+                        entry.target.style.animation = 'fadeInLeft 0.8s ease-out forwards';
+                    } else if (sectionId === 'realisations') {
+                        entry.target.style.animation = 'fadeInRight 0.8s ease-out forwards';
+                    } else if (sectionId === 'contact') {
+                        entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                    } else if (sectionId === 'blog') {
+                        entry.target.style.animation = 'fadeInScale 0.8s ease-out forwards';
+                    } else {
+                        // Animation par défaut pour les sections sans ID (Notre Méthode, etc.)
+                        entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                    }
+                }, index * 100); // Délai de 100ms entre chaque élément
+                
+                // Arrêter d'observer une fois l'animation déclenchée
+                animationObserver.unobserve(entry.target);
+            }
+        });
+    }, animationObserverOptions);
+    
+    // Observer toutes les sections avec la classe animate-on-scroll
+    const animatedSections = document.querySelectorAll('.animate-on-scroll');
+    animatedSections.forEach(section => {
+        animationObserver.observe(section);
+    });
+});
+
+
+// 📧 FORMSPREE - Configuration Simple et Efficace ✅
+// Form ID: mbdadbkr
+// Email destinataire: gfe-etancheite@hotmail.com
+
+// Gestion du formulaire avec Formspree (AJAX)
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerHTML;
+            
+            // Désactiver le bouton et afficher un loader
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Envoi en cours...';
+            
+            try {
+                // Envoyer le formulaire avec FormData (supporte les fichiers)
+                const formData = new FormData(contactForm);
+                
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    console.log('✅ Email envoyé avec succès via FormSubmit!');
+                    
+                    // Succès - afficher une belle modal de confirmation
+                    showSuccessModal();
+                    
+                    // Changer le bouton en succès
+                    submitButton.innerHTML = '<i class="fas fa-check-circle mr-2"></i>Message envoyé !';
+                    submitButton.classList.remove('btn-primary');
+                    submitButton.classList.add('bg-green-600');
+                    
+                    // Réinitialiser le formulaire après 3 secondes
+                    setTimeout(function() {
+                        contactForm.reset();
+                        submitButton.innerHTML = originalButtonText;
+                        submitButton.classList.add('btn-primary');
+                        submitButton.classList.remove('bg-green-600');
+                        submitButton.disabled = false;
+                    }, 3000);
+                    
+                } else {
+                    const data = await response.json();
+                    throw new Error(data.error || 'Erreur lors de l\'envoi');
+                }
+                
+            } catch (error) {
+                console.error('❌ Erreur lors de l\'envoi:', error);
+                
+                // Afficher une modal d'erreur
+                showErrorModal();
+                
+                // Réactiver le bouton
+                submitButton.innerHTML = originalButtonText;
+                submitButton.disabled = false;
+            }
+        });
+    }
+});
+
+// Fonction pour afficher la modal de succès
+function showSuccessModal() {
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-50 animate-fade-in';
+    modal.innerHTML = `
+        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-4 animate-scale-in">
+            <div class="text-center">
+                <div class="mb-4">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+                        <i class="fas fa-check-circle text-5xl text-green-600"></i>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Demande envoyée avec succès !</h3>
+                <p class="text-gray-600 mb-2">Merci pour votre demande de devis.</p>
+                <p class="text-gray-600 mb-6">Notre équipe vous répondra sous <strong class="text-blue-600">4 jours ouvrés maximum</strong>.</p>
+                <button onclick="this.closest('.fixed').remove()" class="btn-primary px-6 py-3">
+                    <i class="fas fa-check mr-2"></i>Compris
+                </button>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+    
+    // Fermer automatiquement après 5 secondes
+    setTimeout(() => {
+        if (document.body.contains(modal)) {
+            modal.remove();
+        }
+    }, 5000);
+}
+
+// Fonction pour afficher la modal d'erreur
+function showErrorModal() {
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-50 animate-fade-in';
+    modal.innerHTML = `
+        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-4 animate-scale-in">
+            <div class="text-center">
+                <div class="mb-4">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto">
+                        <i class="fas fa-exclamation-circle text-5xl text-red-600"></i>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Erreur d'envoi</h3>
+                <p class="text-gray-600 mb-2">Une erreur est survenue lors de l'envoi.</p>
+                <p class="text-gray-600 mb-6">Veuillez réessayer ou nous contacter directement au <strong class="text-blue-600">09 83 48 26 97</strong>.</p>
+                <button onclick="this.closest('.fixed').remove()" class="bg-red-600 text-white px-6 py-3 rounded-xl hover:bg-red-700 transition-colors font-semibold">
+                    <i class="fas fa-times mr-2"></i>Fermer
+                </button>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!-- FORMULAIRE COMPLET GFE --><section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-black text-gray-900 mb-4">Demande de Devis Offert</h2>
+                <p class="text-gray-600">Réponse sous 4 jours ouvrés ouvrées • Sans engagement</p>
+            </div>
+            
+            <form class="card-elegant p-8 space-y-6">
+                <div>
+                    <label class="block text-gray-700 font-semibold mb-2">Vous êtes *</label>
+                    <select required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20">
+                        <option value="">Sélectionner votre profil</option>
+                        <option value="collectivite">Collectivité</option>
+                        <option value="promoteur">Promoteur Immobilier</option>
+                        <option value="architecte">Architecte / Maître d'oeuvre</option>
+                        <option value="syndic">Syndic</option>
+                        <option value="entreprise">Entreprise / BTP</option>
+                        <option value="professionnel">Professionnel</option>
+                        <option value="particulier">Particulier</option>
+                    </select>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Nom / Raison sociale *</label>
+                        <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20" placeholder="Votre nom">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Téléphone *</label>
+                        <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20" placeholder="09 83 48 26 97">
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="block text-gray-700 font-semibold mb-2">Email *</label>
+                    <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20" placeholder="votre@email.fr">
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Type de projet *</label>
+                        <select required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20">
+                            <option value="">Sélectionner votre besoin</option>
+                            <option value="toiture">Étanchéité toiture</option>
+                            <option value="terrasse">Étanchéité terrasse</option>
+                            <option value="fondations">Fondations / murs enterrés</option>
+                            <option value="industriel">Bâtiment industriel</option>
+                            <option value="fuite">Recherche de fuites</option>
+                            <option value="renovation">Réfection / rénovation</option>
+                            <option value="dalles">Dalles sur plots</option>
+                            <option value="planchers">Planchers boissons</option>
+                            <option value="resine">Étanchéité à froid (résine)</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Délai souhaité *</label>
+                        <select required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20">
+                            <option value="">Sélectionner le délai</option>
+                            <option value="urgent">Le plus rapidement possible</option>
+                            <option value="1-mois">Dans 1 mois</option>
+                            <option value="2-mois">Dans 2 mois</option>
+                            <option value="3-mois-plus">Dans + de 3 mois</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="block text-gray-700 font-semibold mb-2">Description du projet *</label>
+                    <textarea required rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 resize-none" placeholder="Décrivez votre projet : surface, localisation, contraintes techniques..."></textarea>
+                </div>
+                
+                <div>
+                    <label class="block text-gray-700 font-semibold mb-2">Photos ou Plans (optionnel)</label>
+                    <div class="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center hover:border-blue-500 transition-colors cursor-pointer">
+                        <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-2"></i>
+                        <p class="text-gray-600 mb-1">Glissez vos fichiers ici ou cliquez pour parcourir</p>
+                        <p class="text-sm text-gray-500">JPG, PNG, PDF - Max 10 Mo par fichier</p>
+                        <input type="file" multiple accept=".jpg,.jpeg,.png,.pdf" class="hidden">
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-primary w-full text-center text-lg">
+                    <i class="fas fa-paper-plane mr-2"></i> Envoyer ma demande de devis
+                </button>
+                
+                <p class="text-center text-sm text-gray-500">
+                    <i class="fas fa-shield-alt mr-2"></i> Vos données sont sécurisées et ne seront jamais partagées
+                </p>
+            </form>
+        </div>
+    </div>
+</section>

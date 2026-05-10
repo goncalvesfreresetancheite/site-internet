@@ -1,0 +1,110 @@
+# 🚀 COPIE FOOTER + FORMULAIRE EN COURS
+
+## ✅ CORRECTIONS RAPIDES TERMINÉES
+
+1. ✅ **Icônes bleu clair** : Terrasse, Rénovation, Planchers Bois → `from-blue-300 to-cyan-400`
+2. ✅ **"8 Départements"** sur une ligne : `whitespace-nowrap`
+3. ✅ **Icône Villes Majeures** : DÉJÀ PRÉSENTE (`fa-city`)
+
+## 🔄 FOOTER - EN COURS DE COPIE
+
+### ✅ Fichiers terminés (footer copié)
+1. ✅ etancheite-isere.html
+
+### ⏳ Fichiers restants (25 fichiers)
+**Départements** (7 fichiers) :
+- etancheite-ain.html
+- etancheite-rhone.html
+- etancheite-drome.html
+- etancheite-ardeche.html
+- etancheite-loire.html
+- etancheite-haute-savoie.html
+- etancheite-savoie.html
+
+**Villes** (8 fichiers) :
+- etancheur-chambery.html
+- etancheur-annecy.html
+- etancheur-grenoble.html
+- etancheur-lyon.html
+- etancheur-albertville.html
+- etancheur-aix-les-bains.html
+- etancheur-valence.html
+- etancheur-saint-etienne.html
+
+**Stations** (10 fichiers) :
+- etancheite-val-thorens.html
+- etancheite-courchevel.html
+- etancheite-meribel.html
+- etancheite-la-plagne.html
+- etancheite-les-arcs.html
+- etancheite-tignes.html
+- etancheite-les-2-alpes.html
+- etancheite-alpe-huez.html
+- etancheite-megeve.html
+- etancheite-chamonix.html
+
+---
+
+## 📝 FOOTER À COPIER (Version finale index.html)
+
+```html
+<footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <img src="https://goncalves-freres-etancheite.fr/wp-content/uploads/2020/02/cropped-goncalves-freres-etancheite-logo-2020-full.png" alt="GFE Logo" class="h-12 mb-4 brightness-0 invert">
+                <p class="text-gray-400 text-sm">Spécialiste en étanchéité depuis 2011. Expert zones de montagne et stations de ski.</p>
+            </div>
+            
+            <div>
+                <h5 class="font-bold text-white mb-4">Services</h5>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="index.html#services" class="hover:text-white transition-colors">Étanchéité professionnelle</a></li>
+                    <li><a href="index.html#services" class="hover:text-white transition-colors">Rénovation & diagnostic</a></li>
+                    <li><a href="index.html#services" class="hover:text-white transition-colors">Dallettes & aménagements</a></li>
+                    <li><a href="index.html#services" class="hover:text-white transition-colors">Recherche de fuites</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h5 class="font-bold text-white mb-4">Clients</h5>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li>Collectivités publiques</li>
+                    <li>Promoteurs immobiliers</li>
+                    <li>Architectes & MOE</li>
+                    <li>Syndics & copropriétés</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h5 class="font-bold text-white mb-4">Contact</h5>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li>116 Impasse des Rippes<br>73800 Chignin - Savoie</li>
+                    <li><a href="tel:0983482697" class="hover:text-white transition-colors">09 83 48 26 97</a></li>
+                    <li><a href="mailto:gfe-etancheite@hotmail.fr" class="hover:text-white transition-colors">gfe-etancheite@hotmail.fr</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2026 GFE - Gonçalves Frères Étanchéité | Tous droits réservés</p>
+            <p class="mt-2">Entreprise d'étanchéité depuis 2011 | Siège : 116 Impasse des Rippes, 73800 Chignin - Savoie</p>
+            <p class="mt-4 text-gray-500 text-xs italic">Créé en toute discrétion par <a href="https://site.agencedelombre.fr" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition-colors underline">l'Agence de L'Ombre</a></p>
+        </div>
+    </div>
+</footer>
+```
+
+---
+
+## ⏭️ PROCHAINES ÉTAPES
+
+1. ✅ Corriger index.html (icônes, références, départements)
+2. 🔄 **EN COURS** : Copier footer dans 25 fichiers restants
+3. ⏳ **SUIVANT** : Copier formulaire dans 26 fichiers
+4. ⏳ **SUIVANT** : Déplacer formulaire ENTRE réalisations et blog (index.html)
+
+---
+
+**Statut** : 1/26 fichiers footer terminés  
+**Prochaine action** : Continuer la copie des footers

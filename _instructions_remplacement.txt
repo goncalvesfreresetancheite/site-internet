@@ -1,0 +1,21 @@
+# COMMANDES DE REMPLACEMENT
+
+## 1. Section SERVICES (lignes 187-288)
+Remplacer par le contenu de `_nouveau_services.html`
+
+## 2. Section ZONES (lignes 290-405)  
+Remplacer par le contenu de `_nouvelles_zones.html`
+
+## 3. Références - DÉJÀ FAIT ✅
+- Grid cols-4 (1 ligne)
+- 150000 formaté avec toLocaleString
+
+---
+
+Comme le fichier est trop long pour Edit, JE VAIS créer un nouveau index.html complet en combinant :
+- Début d'index.html (lignes 1-186)
+- _nouveau_services.html
+- _nouvelles_zones.html  
+- Fin d'index.html (ligne 406+)
+
+Puis renommer en index.html

@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.goncalves-freres-etancheite.fr/sitemap.xml
+
+# Disallow admin pages (none for static site)
+# Allow all pages for SEO indexing
+
+# Crawl-delay
+Crawl-delay: 1

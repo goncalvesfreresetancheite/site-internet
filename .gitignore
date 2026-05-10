@@ -1,0 +1,53 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# Dossiers de build (si vous utilisez un générateur)
+node_modules/
+dist/
+build/
+.cache/
+
+# Fichiers de configuration locale
+.env
+.env.local
+.env.*.local
+
+# Fichiers de backup
+*.backup
+*-backup.*
+
+# Documentation interne (garder les changelogs publics)
+/memories/
+/internal-notes/
+
+# Fichiers de développement
+/test/
+/draft/
+*.draft.html
+
+# Fichiers volumineux (si vous en avez)
+*.psd
+*.ai
+*.sketch
+*.fig

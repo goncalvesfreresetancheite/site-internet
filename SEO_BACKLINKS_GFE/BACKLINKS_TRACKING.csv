@@ -1,0 +1,76 @@
+ID,Catégorie,Nom de la source,URL,DA,DoFollow,Date inscription,Date vérification,Statut,Lien actif,Anchor text,URL cible,Notes,Priorité,Temps estimé
+1,Annuaires Étanchéité,L'Annuaire BTP,https://lannuairebtp.fr/,35,Oui,,,À faire,,,,À inscrire en priorité,Critique,10min
+2,Annuaires Étanchéité,Batiment.eu,https://batiment.eu/,42,Oui,,,À faire,,,,Bon DA,Haute,15min
+3,Annuaires Étanchéité,Annuaire BTP,https://www.annuairebtp.com/,38,Oui,,,À faire,,,,Spécialisé BTP,Haute,10min
+4,Annuaires Étanchéité,Dollmedia BTP,https://www.dollmedia-btp.com/,32,Oui,,,À faire,,,,Secteur construction,Moyenne,15min
+5,Annuaires Étanchéité,OBAT.fr,https://www.obat.fr/,28,Oui,,,À faire,,,,Artisans BTP,Moyenne,10min
+6,Annuaires Étanchéité,BTP Annuaire,https://www.btp-annuaire.fr/,25,Oui,,,À faire,,,,Inscription rapide,Moyenne,10min
+7,Annuaires Étanchéité,Artisans BTP,https://www.artisans-btp.fr/,30,Oui,,,À faire,,,,Focus artisans,Moyenne,12min
+8,Annuaires Étanchéité,Pro BTP France,https://www.probtp-france.fr/,27,Oui,,,À faire,,,,Couverture nationale,Moyenne,10min
+9,Haute Autorité,Pages Jaunes,https://www.pagesjaunes.fr/,85,Non,,,À faire,,,,DA très élevé,Critique,20min
+10,Haute Autorité,118 712,https://www.118712.fr/,72,Non,,,À faire,,,,Annuaire téléphonique,Critique,15min
+11,Haute Autorité,Yelp France,https://www.yelp.fr/,93,Non,,,À faire,,,,Avis clients importants,Critique,15min
+12,Haute Autorité,Kompass,https://fr.kompass.com/,78,Oui,,,À faire,,,,B2B international,Haute,20min
+13,Haute Autorité,Societe.com,https://www.societe.com/,82,Non,,,À faire,,,,Données légales,Haute,10min
+14,Haute Autorité,Infogreffe,https://www.infogreffe.fr/,88,Non,,,À faire,,,,Registre commerce,Haute,10min
+15,Haute Autorité,Annuaire Entreprises,https://annuaire-entreprises.data.gouv.fr/,90,Oui,,,À faire,,,,Données publiques,Haute,15min
+16,Haute Autorité,Pappers,https://www.pappers.fr/,75,Non,,,À faire,,,,Infos financières,Haute,10min
+17,Annuaires Locaux,Petit Futé Chambéry,https://www.petitfute.com/,70,Non,,,À faire,,,,Guide local,Haute,15min
+18,Annuaires Locaux,Ville de Chambéry,https://www.chambery.fr/,68,Oui,,,À faire,,,,Site officiel mairie,Critique,20min
+19,Annuaires Locaux,Grenoble CCI,https://www.grenoble.cci.fr/,65,Oui,,,À faire,,,,Chambre commerce,Haute,20min
+20,Annuaires Locaux,Annecy Entreprises,https://www.annecy.fr/,60,Oui,,,À faire,,,,Annuaire municipal,Haute,15min
+21,Annuaires Locaux,Savoie Annuaire,https://www.savoie-annuaire.fr/,28,Oui,,,À faire,,,,Focus département 73,Moyenne,10min
+22,Annuaires Locaux,Auvergne-Rhône-Alpes Pro,https://www.auvergnerhonealpes.fr/,72,Oui,,,À faire,,,,Région AURA,Haute,20min
+23,Annuaires Locaux,Lyon City Crunch,https://www.lyoncitycrunch.com/,42,Oui,,,À faire,,,,Média local Lyon,Moyenne,15min
+24,Citations NAP,Apple Maps,https://mapsconnect.apple.com/,100,Non,,,À faire,,,,DA maximum,Critique,15min
+25,Citations NAP,Bing Places,https://www.bingplaces.com/,95,Non,,,À faire,,,,Bing = 3% parts,Critique,15min
+26,Citations NAP,Waze,https://www.waze.com/,92,Non,,,À faire,,,,Navigation GPS,Haute,10min
+27,Citations NAP,Foursquare,https://foursquare.com/,91,Non,,,À faire,,,,Check-ins locaux,Haute,12min
+28,Citations NAP,Hotfrog,https://www.hotfrog.fr/,65,Oui,,,À faire,,,,Annuaire B2B,Moyenne,10min
+29,Citations NAP,Tuugo,https://www.tuugo.fr/,58,Oui,,,À faire,,,,International,Moyenne,10min
+30,Citations NAP,Cylex,https://www.cylex-france.fr/,60,Oui,,,À faire,,,,Annuaire européen,Moyenne,10min
+31,Réseaux Sociaux,LinkedIn Company,https://www.linkedin.com/,98,Non,25/02/2026,,Fait,Oui,,,Profil entreprise créé,Critique,30min
+32,Réseaux Sociaux,Facebook Business,https://www.facebook.com/,96,Non,25/02/2026,,Fait,Oui,,,Page entreprise active,Critique,20min
+33,Réseaux Sociaux,Instagram Business,https://www.instagram.com/,95,Non,25/02/2026,,Fait,Oui,,,Compte professionnel,Haute,20min
+34,Réseaux Sociaux,Pinterest Business,https://www.pinterest.fr/,94,Oui,,,À faire,,,,Épingles visuelles,Haute,30min
+35,Réseaux Sociaux,YouTube Channel,https://www.youtube.com/,100,Non,,,À faire,,,,Vidéos chantiers,Haute,1h
+36,Réseaux Sociaux,TikTok Business,https://www.tiktok.com/,92,Non,,,À faire,,,,Contenu court,Moyenne,20min
+37,Réseaux Sociaux,Twitter/X,https://twitter.com/,94,Non,,,À faire,,,,Actualités rapides,Moyenne,15min
+38,Forums & Communautés,Forum Construire,https://www.forumconstruire.com/,62,Oui,,,À faire,,,,Communauté construction,Haute,30min
+39,Forums & Communautés,BricoZone,https://www.bricozone.fr/,58,Oui,,,À faire,,,,Forum bricolage,Haute,30min
+40,Forums & Communautés,BTP Forum,https://www.btp-forum.com/,35,Oui,,,À faire,,,,Discussions pro BTP,Moyenne,20min
+41,Forums & Communautés,Reddit r/France,https://www.reddit.com/r/france/,91,Non,,,À faire,,,,Communauté française,Haute,30min
+42,Forums & Communautés,Quora France,https://fr.quora.com/,93,Non,,,À faire,,,,Questions-réponses,Haute,30min
+43,CCI & Associations,CCI Savoie,https://www.savoie.cci.fr/,68,Oui,,,À faire,,,,Chambre commerce 73,Critique,1h
+44,CCI & Associations,CCI Haute-Savoie,https://www.haute-savoie.cci.fr/,70,Oui,,,À faire,,,,Chambre commerce 74,Critique,1h
+45,CCI & Associations,FFB Fédération BTP,https://www.ffbatiment.fr/,75,Oui,,,À faire,,,,Fédération nationale,Haute,2h
+46,CCI & Associations,CAPEB,https://www.capeb.fr/,72,Oui,,,À faire,,,,Confédération artisans,Haute,2h
+47,CCI & Associations,Artisans & Métiers,https://www.artisanat.fr/,78,Oui,,,À faire,,,,Chambre métiers,Haute,1h
+48,CCI & Associations,Réseau Entreprendre,https://www.reseau-entreprendre.org/,65,Oui,,,À faire,,,,Réseau entrepreneurs,Haute,1h
+49,Presse Locale & Médias,Le Dauphiné Libéré,https://www.ledauphine.com/,82,Oui,,,À faire,,,,Journal régional,Haute,2h
+50,Presse Locale & Médias,Savoie News,https://savoie-news.fr/,42,Oui,,,À faire,,,,Actualité locale,Moyenne,1h
+51,Presse Locale & Médias,La Tribune de Genève,https://www.tdg.ch/,78,Oui,,,À faire,,,,Presse suisse,Haute,2h
+52,Presse Locale & Médias,BFM Lyon,https://www.bfmtv.com/lyon/,88,Oui,,,À faire,,,,Média TV/web,Haute,3h
+53,Presse Locale & Médias,France 3 Région,https://france3-regions.francetvinfo.fr/,92,Oui,,,À faire,,,,Chaîne régionale,Haute,3h
+54,Partenariats,Fournisseurs BTP,,60,Oui,,,À faire,,,,Point.P Leroy Merlin,Haute,2h
+55,Partenariats,Architectes locaux,,40,Oui,,,À faire,,,,Cabinets Chambéry,Haute,3h
+56,Partenariats,Écoles BTP,,60,Oui,,,À faire,,,,CFA lycées techniques,Haute,4h
+57,Partenariats,Mairies & Collectivités,,80,Oui,,,À faire,,,,Sites institutionnels,Critique,5h
+58,Partenariats,Influenceurs BTP,,50,Oui,,,À faire,,,,YouTubeurs rénovation,Moyenne,3h
+59,Annuaires Généralistes,Gralon,https://www.gralon.net/,58,Oui,,,À faire,,,,Annuaire thématique,Moyenne,15min
+60,Annuaires Généralistes,Webrankinfo,https://www.webrankinfo.com/,68,Oui,,,À faire,,,,Communauté SEO,Moyenne,15min
+61,Annuaires Généralistes,1two,https://www.1two.fr/,45,Oui,,,À faire,,,,Annuaire gratuit,Moyenne,10min
+62,Annuaires Généralistes,Net-liens,https://www.net-liens.com/,42,Oui,,,À faire,,,,Répertoire sites,Moyenne,10min
+63,Annuaires Généralistes,Lien-web,https://www.lien-web.fr/,38,Oui,,,À faire,,,,Soumission rapide,Moyenne,10min
+64,Annuaires Généralistes,Yagoort,https://www.yagoort.org/,35,Oui,,,À faire,,,,Catégories variées,Moyenne,10min
+65,Annuaires Généralistes,Coodoeil,https://www.coodoeil.fr/,32,Oui,,,À faire,,,,Annuaire français,Moyenne,10min
+66,Guest Blogging,Blog OBAT.fr,https://www.obat.fr/blog/,28,Oui,,,À faire,,,,Articles artisans,Haute,3h
+67,Guest Blogging,Batiactu,https://www.batiactu.com/,72,Oui,,,À faire,,,,Actualité BTP,Haute,4h
+68,Guest Blogging,BTP Construction,https://www.btp-construction.com/,48,Oui,,,À faire,,,,Industrie bâtiment,Moyenne,3h
+69,Guest Blogging,Blog Marketing PME,,42,Oui,,,À faire,,,,Marketing local,Moyenne,3h
+70,Guest Blogging,Média Étanchéité,,35,Oui,,,À faire,,,,Blog spécialisé,Moyenne,3h
+71,Outils & Agrégateurs,Crunchbase,https://www.crunchbase.com/,92,Non,,,À faire,,,,Base entreprises,Haute,30min
+72,Outils & Agrégateurs,AngelList,https://angel.co/,90,Non,,,À faire,,,,Startups investisseurs,Moyenne,20min
+73,Outils & Agrégateurs,Malt,https://www.malt.fr/,68,Non,,,À faire,,,,Freelances entreprises,Moyenne,30min
+74,Outils & Agrégateurs,Sortlist,https://www.sortlist.fr/,65,Oui,,,À faire,,,,Annuaire agences,Haute,40min
+75,Outils & Agrégateurs,Clutch.co,https://clutch.co/,92,Oui,,,À faire,,,,Reviews B2B,Haute,1h
