@@ -52,6 +52,10 @@ build/
 *.sketch
 *.fig
 
+# Vidéos trop lourdes pour Cloudflare Pages (limite 25 MB)
+images/edf-seyssel/edf-drone-19s.mp4
+chantiers/
+
 # Token push client GFE (local only)
 .env.push
 push.sh
