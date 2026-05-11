@@ -29,7 +29,7 @@
         .breadcrumb a:hover{color:white;}
 
         /* Hero photo */
-        .hero-photo{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;}
+        .hero-photo{position:relative;min-height:78vh;display:flex;align-items:flex-end;overflow:hidden;}
         .hero-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,#0b1120 0%,rgba(11,17,32,0.65) 45%,rgba(11,17,32,0.1) 100%);}
         .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:heroZoom 18s ease forwards;}
         @keyframes heroZoom{from{transform:scale(1);}to{transform:scale(1.08);}}
@@ -52,12 +52,12 @@
         .stat-pop.on{opacity:1;transform:scale(1);}
 
         /* Gallery */
-        .gal-item{overflow:hidden;border-radius:1rem;cursor:pointer;}
-        .gal-item img{transition:transform 0.7s cubic-bezier(0.16,1,0.3,1),filter 0.4s ease;width:100%;height:100%;object-fit:cover;}
+        .gal-item{position:relative;overflow:hidden;border-radius:1rem;cursor:pointer;}
+        .gal-item img{transition:transform 0.7s cubic-bezier(0.16,1,0.3,1),filter 0.4s ease;width:100%;height:100%;object-fit:cover;display:block;}
         .gal-item:hover img{transform:scale(1.08);filter:brightness(1.06);}
 
         /* Altitude badges */
-        .alt-badge{position:absolute;bottom:12px;left:12px;background:rgba(11,17,32,0.85);backdrop-filter:blur(8px);border:1px solid rgba(59,130,246,0.3);color:white;border-radius:30px;padding:6px 14px;font-size:.75rem;font-weight:700;letter-spacing:.05em;}
+        .alt-badge{position:absolute;bottom:12px;left:12px;z-index:2;background:rgba(11,17,32,0.88);backdrop-filter:blur(8px);border:1px solid rgba(59,130,246,0.35);color:white;border-radius:30px;padding:6px 14px;font-size:.75rem;font-weight:700;letter-spacing:.05em;white-space:nowrap;}
 
         /* Lightbox */
         .lightbox{display:none;position:fixed;z-index:9999;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.96);align-items:center;justify-content:center;}
@@ -229,27 +229,27 @@
 <section class="pb-8 bg-white">
     <div class="container mx-auto px-6 max-w-6xl">
         <p class="text-xs uppercase tracking-widest text-gray-400 mb-4 reveal">Les trois programmes — cliquez pour agrandir</p>
-        <div class="grid grid-cols-12 gap-3 reveal" style="height:560px;">
+        <div class="grid grid-cols-12 gap-3 reveal" style="height:540px;">
 
             <!-- Jandri 1 : grand -->
-            <div class="col-span-6 gal-item relative" onclick="openLightbox(0)">
+            <div class="col-span-6 gal-item" onclick="openLightbox(0)" style="height:100%;">
                 <img src="images/jandri-1-les-2-alpes.jpg" alt="Jandri 1 — 1650m">
                 <div class="alt-badge"><i class="fas fa-mountain mr-1"></i>Jandri 1 — 1 650 m</div>
             </div>
 
             <!-- Jandri 3 + 4 : colonne droite -->
-            <div class="col-span-6 grid grid-rows-2 gap-3">
-                <div class="gal-item relative d1" onclick="openLightbox(1)">
+            <div class="col-span-6" style="display:grid;grid-template-rows:1fr 1fr;gap:12px;height:100%;overflow:hidden;">
+                <div class="gal-item d1" onclick="openLightbox(1)">
                     <img src="images/jandri-3-les-2-alpes.jpg" alt="Jandri 3 — 2600m">
                     <div class="alt-badge"><i class="fas fa-mountain mr-1"></i>Jandri 3 — 2 600 m</div>
                 </div>
-                <div class="gal-item relative d2" onclick="openLightbox(2)">
+                <div class="gal-item d2" onclick="openLightbox(2)">
                     <img src="images/jandri-4-les-2-alpes.jpg" alt="Jandri 4 — 3200m">
                     <div class="alt-badge"><i class="fas fa-mountain mr-1"></i>Jandri 4 — 3 200 m</div>
                 </div>
             </div>
         </div>
-        <p class="text-xs text-gray-400 mt-4 text-center reveal">Crédit photo Jandri 1 : © Pyrene DUFFAU / Les Deux Alpes · Architecte : ATEAM Architectes</p>
+        <p class="text-xs text-gray-400 mt-4 text-center">Crédit photo Jandri 1 : © Pyrene DUFFAU / Les Deux Alpes &nbsp;·&nbsp; Architecte : ATEAM Architectes</p>
     </div>
 </section>
 
