@@ -1,0 +1,27 @@
+/* Bandeau "GFE recrute" — fixé en haut de toutes les pages */
+:root { --gfe-banner-h: 44px; }
+body.has-recruit-banner { padding-top: var(--gfe-banner-h); }
+body.has-recruit-banner nav.fixed.top-0 { top: var(--gfe-banner-h); }
+.recruit-banner {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 60;
+    height: var(--gfe-banner-h);
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 0 12px;
+    background: #1d4ed8; color: #fff;
+    font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.2;
+    text-decoration: none; text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,.25);
+    transition: background .2s ease;
+}
+.recruit-banner:hover { background: #1e40af; }
+.recruit-banner strong { font-weight: 800; letter-spacing: .01em; }
+.recruit-banner .rb-dot { width: 8px; height: 8px; border-radius: 50%; background: #fff; flex: none; animation: rb-pulse 1.8s ease-in-out infinite; }
+.recruit-banner .rb-cta { background: #fff; color: #1d4ed8; font-weight: 700; padding: 4px 12px; border-radius: 999px; white-space: nowrap; font-size: 13px; }
+@keyframes rb-pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .45; transform: scale(.8); } }
+@media (max-width: 640px) {
+    :root { --gfe-banner-h: 40px; }
+    .recruit-banner { font-size: 12.5px; gap: 8px; }
+    .recruit-banner .rb-long { display: none; }
+    .recruit-banner .rb-cta { padding: 3px 10px; font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { .recruit-banner .rb-dot { animation: none; } }
