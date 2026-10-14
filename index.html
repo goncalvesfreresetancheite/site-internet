@@ -787,14 +787,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section id="zones" class="py-14 md:py-20 bg-gray-50 relative overflow-hidden animate-on-scroll">
     <style>
-        .zone-card { background:#fff; border:1px solid #e2e8f0; border-radius:20px; padding:28px; box-shadow:0 8px 30px rgba(15,23,42,.06); display:flex; flex-direction:column; gap:18px; position:relative; overflow:hidden; transition:transform .3s, box-shadow .3s; }
+        .zone-card { background:#fff; border:1px solid #e2e8f0; border-radius:20px; padding:24px; box-shadow:0 8px 30px rgba(15,23,42,.06); display:flex; flex-direction:column; gap:18px; position:relative; overflow:hidden; transition:transform .3s, box-shadow .3s; }
         .zone-card::before { content:''; position:absolute; left:0; top:0; right:0; height:5px; background:linear-gradient(90deg,#1d4ed8,#0ea5e9); }
         .zone-card:hover { transform:translateY(-6px); box-shadow:0 22px 45px rgba(29,78,216,.16); }
         .zone-card--main { border-color:#bfdbfe; box-shadow:0 14px 40px rgba(29,78,216,.14); }
         .zone-card__head { display:flex; align-items:center; gap:16px; }
-        .zone-num { font-family:'Sora',sans-serif; font-weight:800; font-size:2.4rem; line-height:1; color:#fff; background:linear-gradient(135deg,#1e3a8a,#2563eb); border-radius:16px; padding:14px 16px; min-width:84px; text-align:center; }
-        .zone-card h3 { font-size:1.5rem; font-weight:800; color:#0f172a; margin:0; }
-        .zone-tag { color:#2563eb; font-size:.8rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; margin:2px 0 0; }
+        .zone-num { font-family:'Sora',sans-serif; font-weight:800; font-size:2rem; line-height:1; color:#fff; background:linear-gradient(135deg,#1e3a8a,#2563eb); border-radius:14px; padding:12px 12px; min-width:72px; text-align:center; }
+        .zone-card h3 { font-size:1.3rem; line-height:1.15; font-weight:800; color:#0f172a; margin:0; }
+        .zone-sub { color:#2563eb; font-size:.72rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; margin:2px 0 0; }
         .zone-desc { color:#475569; font-size:.95rem; margin:0; }
         .zone-label { display:block; font-size:.72rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:#64748b; margin-bottom:8px; }
         .zone-label i { color:#2563eb; margin-right:4px; }
@@ -807,7 +807,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         .zone-refs a { color:#334155; font-size:.9rem; text-decoration:none; display:flex; align-items:center; gap:8px; }
         .zone-refs a:hover { color:#1d4ed8; text-decoration:underline; }
         .zone-refs i { color:#16a34a; font-size:.8rem; }
-        .zone-cta { margin-top:auto; display:flex; align-items:center; justify-content:space-between; background:#0f172a; color:#fff; padding:13px 18px; border-radius:12px; font-weight:700; font-size:.95rem; text-decoration:none; transition:background .2s; }
+        .zone-cta { margin-top:auto; display:flex; align-items:center; justify-content:space-between; background:#0f172a; color:#fff; padding:12px 14px; border-radius:12px; font-weight:700; font-size:.85rem; gap:8px; text-decoration:none; transition:background .2s; }
         .zone-cta:hover { background:#1d4ed8; color:#fff; }
         .zone-others { background:#fff; border:1px solid #e2e8f0; border-radius:20px; padding:26px 28px; }
         .zone-dept { display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:12px; background:#f8fafc; border:1px solid #e2e8f0; color:#334155; font-weight:600; font-size:.9rem; text-decoration:none; transition:all .2s; }
@@ -821,11 +821,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="text-lg text-gray-600">Basés à Chignin (73), nous intervenons sur l'ensemble des Alpes du Nord, de la vallée aux stations de ski, et plus largement en Auvergne-Rhône-Alpes.</p>
         </div>
 
-        <div class="grid lg:grid-cols-3 gap-6 max-w-7xl mx-auto mb-8">
+        <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6 max-w-7xl mx-auto mb-8">
             <article class="zone-card zone-card--main">
                 <header class="zone-card__head">
                     <span class="zone-num">73</span>
-                    <div><h3>Savoie</h3><p class="zone-tag">Siège · Chignin</p></div>
+                    <div><h3>Savoie</h3><p class="zone-sub">Siège · Chignin</p></div>
                 </header>
                 <p class="zone-desc">Notre territoire d'origine : de la vallée aux stations de haute altitude.</p>
                 <div class="zone-group"><span class="zone-label"><i class="fas fa-city" aria-hidden="true"></i> Villes</span><div class="zone-chips"><a href="etancheur-chambery.html" class="zone-chip ">Chambéry</a><a href="etancheur-aix-les-bains.html" class="zone-chip ">Aix-les-Bains</a><a href="etancheur-albertville.html" class="zone-chip ">Albertville</a></div></div>
@@ -836,7 +836,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <article class="zone-card">
                 <header class="zone-card__head">
                     <span class="zone-num">38</span>
-                    <div><h3>Isère</h3><p class="zone-tag">Grenoble & Oisans</p></div>
+                    <div><h3>Isère</h3><p class="zone-sub">Grenoble & Oisans</p></div>
                 </header>
                 <p class="zone-desc">Métropole grenobloise, campus universitaires et stations de l'Oisans.</p>
                 <div class="zone-group"><span class="zone-label"><i class="fas fa-city" aria-hidden="true"></i> Villes</span><div class="zone-chips"><a href="etancheur-grenoble.html" class="zone-chip ">Grenoble</a><a href="etancheur-saint-martin-d-heres.html" class="zone-chip ">Saint-Martin-d'Hères</a><a href="etancheur-gieres.html" class="zone-chip ">Gières</a></div></div>
@@ -847,7 +847,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <article class="zone-card">
                 <header class="zone-card__head">
                     <span class="zone-num">74</span>
-                    <div><h3>Haute-Savoie</h3><p class="zone-tag">Annecy & Mont-Blanc</p></div>
+                    <div><h3>Haute-Savoie</h3><p class="zone-sub">Annecy & Mont-Blanc</p></div>
                 </header>
                 <p class="zone-desc">Bassin annécien, vallée de l'Arve et stations du Mont-Blanc.</p>
                 <div class="zone-group"><span class="zone-label"><i class="fas fa-city" aria-hidden="true"></i> Villes</span><div class="zone-chips"><a href="etancheur-annecy.html" class="zone-chip ">Annecy</a></div></div>
@@ -855,13 +855,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="zone-group"><span class="zone-label"><i class="fas fa-trophy" aria-hidden="true"></i> Nos références</span><ul class="zone-refs"><li><a href="realisation-edf-seyssel.html"><i class="fas fa-circle-check" aria-hidden="true"></i>Centrale hydroélectrique EDF</a></li></ul></div>
                 <a href="etancheite-haute-savoie.html" class="zone-cta">Étanchéité en Haute-Savoie <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             </article>
+            <article class="zone-card">
+                <header class="zone-card__head">
+                    <span class="zone-num">69</span>
+                    <div><h3>Rhône</h3><p class="zone-sub">Lyon &amp; Métropole</p></div>
+                </header>
+                <p class="zone-desc">Métropole lyonnaise et vallée du Rhône.</p>
+                <div class="zone-group"><span class="zone-label"><i class="fas fa-city" aria-hidden="true"></i> Villes</span><div class="zone-chips"><a href="etancheur-lyon.html" class="zone-chip">Lyon</a></div></div>
+                <a href="etancheite-rhone.html" class="zone-cta">Étanchéité dans le Rhône <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </article>
         </div>
 
         <div class="zone-others max-w-7xl mx-auto">
             <div class="grid md:grid-cols-[1fr_auto] gap-6 items-start">
                 <div>
                     <span class="zone-label"><i class="fas fa-map" aria-hidden="true"></i> Autres départements d'Auvergne-Rhône-Alpes</span>
-                    <div class="flex flex-wrap gap-2"><a href="etancheite-rhone.html" class="zone-dept"><b>69</b>Rhône</a><a href="etancheite-ain.html" class="zone-dept"><b>01</b>Ain</a><a href="etancheite-loire.html" class="zone-dept"><b>42</b>Loire</a><a href="etancheite-drome.html" class="zone-dept"><b>26</b>Drôme</a><a href="etancheite-ardeche.html" class="zone-dept"><b>07</b>Ardèche</a><a href="etancheite-haute-loire.html" class="zone-dept"><b>43</b>Haute-Loire</a><a href="etancheite-puy-de-dome.html" class="zone-dept"><b>63</b>Puy-de-Dôme</a><a href="etancheite-allier.html" class="zone-dept"><b>03</b>Allier</a><a href="etancheite-cantal.html" class="zone-dept"><b>15</b>Cantal</a></div>
+                    <div class="flex flex-wrap gap-2"><a href="etancheite-ain.html" class="zone-dept"><b>01</b>Ain</a><a href="etancheite-loire.html" class="zone-dept"><b>42</b>Loire</a><a href="etancheite-drome.html" class="zone-dept"><b>26</b>Drôme</a><a href="etancheite-ardeche.html" class="zone-dept"><b>07</b>Ardèche</a><a href="etancheite-haute-loire.html" class="zone-dept"><b>43</b>Haute-Loire</a><a href="etancheite-puy-de-dome.html" class="zone-dept"><b>63</b>Puy-de-Dôme</a><a href="etancheite-allier.html" class="zone-dept"><b>03</b>Allier</a><a href="etancheite-cantal.html" class="zone-dept"><b>15</b>Cantal</a></div>
                 </div>
                 <div>
                     <span class="zone-label"><i class="fas fa-city" aria-hidden="true"></i> Autres villes</span>
