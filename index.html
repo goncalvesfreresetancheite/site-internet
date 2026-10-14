@@ -785,214 +785,90 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </section>
 
-<section id="zones" class="py-12 md:py-16 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden animate-on-scroll">
+<section id="zones" class="py-14 md:py-20 bg-gray-50 relative overflow-hidden animate-on-scroll">
+    <style>
+        .zone-card { background:#fff; border:1px solid #e2e8f0; border-radius:20px; padding:28px; box-shadow:0 8px 30px rgba(15,23,42,.06); display:flex; flex-direction:column; gap:18px; position:relative; overflow:hidden; transition:transform .3s, box-shadow .3s; }
+        .zone-card::before { content:''; position:absolute; left:0; top:0; right:0; height:5px; background:linear-gradient(90deg,#1d4ed8,#0ea5e9); }
+        .zone-card:hover { transform:translateY(-6px); box-shadow:0 22px 45px rgba(29,78,216,.16); }
+        .zone-card--main { border-color:#bfdbfe; box-shadow:0 14px 40px rgba(29,78,216,.14); }
+        .zone-card__head { display:flex; align-items:center; gap:16px; }
+        .zone-num { font-family:'Sora',sans-serif; font-weight:800; font-size:2.4rem; line-height:1; color:#fff; background:linear-gradient(135deg,#1e3a8a,#2563eb); border-radius:16px; padding:14px 16px; min-width:84px; text-align:center; }
+        .zone-card h3 { font-size:1.5rem; font-weight:800; color:#0f172a; margin:0; }
+        .zone-tag { color:#2563eb; font-size:.8rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; margin:2px 0 0; }
+        .zone-desc { color:#475569; font-size:.95rem; margin:0; }
+        .zone-label { display:block; font-size:.72rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:#64748b; margin-bottom:8px; }
+        .zone-label i { color:#2563eb; margin-right:4px; }
+        .zone-chips { display:flex; flex-wrap:wrap; gap:8px; }
+        .zone-chip { display:inline-block; padding:6px 14px; border-radius:999px; background:#eff6ff; color:#1e40af; font-size:.85rem; font-weight:600; border:1px solid #dbeafe; text-decoration:none; transition:all .2s; }
+        .zone-chip:hover { background:#1d4ed8; color:#fff; border-color:#1d4ed8; }
+        .zone-chip--sta { background:#0f172a; color:#e2e8f0; border-color:#0f172a; }
+        .zone-chip--sta:hover { background:#2563eb; border-color:#2563eb; color:#fff; }
+        .zone-refs { list-style:none; margin:0; padding:0; display:grid; gap:6px; }
+        .zone-refs a { color:#334155; font-size:.9rem; text-decoration:none; display:flex; align-items:center; gap:8px; }
+        .zone-refs a:hover { color:#1d4ed8; text-decoration:underline; }
+        .zone-refs i { color:#16a34a; font-size:.8rem; }
+        .zone-cta { margin-top:auto; display:flex; align-items:center; justify-content:space-between; background:#0f172a; color:#fff; padding:13px 18px; border-radius:12px; font-weight:700; font-size:.95rem; text-decoration:none; transition:background .2s; }
+        .zone-cta:hover { background:#1d4ed8; color:#fff; }
+        .zone-others { background:#fff; border:1px solid #e2e8f0; border-radius:20px; padding:26px 28px; }
+        .zone-dept { display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:12px; background:#f8fafc; border:1px solid #e2e8f0; color:#334155; font-weight:600; font-size:.9rem; text-decoration:none; transition:all .2s; }
+        .zone-dept b { font-family:'Sora',sans-serif; color:#2563eb; font-size:.85rem; }
+        .zone-dept:hover { background:#eff6ff; border-color:#93c5fd; color:#1d4ed8; }
+    </style>
     <div class="container mx-auto px-6">
-        
-        <!-- Titre Section -->
-        <div class="text-center mb-10">
-            <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-3">
-                Partout en <span style="background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Auvergne-Rhône-Alpes</span>
-            </h2>
-            <p class="text-lg text-gray-600">De la plaine à la haute montagne • 12 départements couverts</p>
+        <div class="text-center mb-12 max-w-3xl mx-auto">
+            <p class="text-blue-700 font-bold uppercase tracking-widest text-xs mb-3">Zones d'intervention</p>
+            <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-4">Savoie, Isère et Haute-Savoie</h2>
+            <p class="text-lg text-gray-600">Basés à Chignin (73), nous intervenons sur l'ensemble des Alpes du Nord, de la vallée aux stations de ski, et plus largement en Auvergne-Rhône-Alpes.</p>
         </div>
-        
-        <!-- Grille Compacte 12 Départements -->
-        <div class="max-w-5xl mx-auto mb-10">
-            <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8">
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                    
-                    <a href="etancheite-ain.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">01</div>
-                            <div class="text-xs font-semibold text-gray-700 mt-1">Ain</div>
-                        </div>
-                    </a>
-                    
-                    <a href="etancheite-allier.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">03</div>
-                            <div class="text-xs font-semibold text-gray-700 mt-1">Allier</div>
-                        </div>
-                    </a>
-                    
-                    <a href="etancheite-ardeche.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">07</div>
-                            <div class="text-xs font-semibold text-gray-700 mt-1">Ardèche</div>
-                        </div>
-                    </a>
-                    
-                    <a href="etancheite-cantal.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">15</div>
-                            <div class="text-xs font-semibold text-gray-700 mt-1">Cantal</div>
-                        </div>
-                    </a>
-                    
-                    <a href="etancheite-drome.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">26</div>
-                            <div class="text-xs font-semibold text-gray-700 mt-1">Drôme</div>
-                        </div>
-                    </a>
-                    
-                    <a href="etancheite-isere.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">38</div>
-                            <div class="text-xs font-semibold text-gray-700 mt-1">Isère</div>
-                        </div>
-                    </a>
-                    
-                    <a href="etancheite-loire.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">42</div>
-                            <div class="text-xs font-semibold text-gray-700 mt-1">Loire</div>
-                        </div>
-                    </a>
-                    
-                    <a href="etancheite-haute-loire.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">43</div>
-                            <div class="text-xs font-semibold text-gray-700 mt-1">Haute-Loire</div>
-                        </div>
-                    </a>
-                    
-                    <a href="etancheite-puy-de-dome.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">63</div>
-                            <div class="text-xs font-semibold text-gray-700 mt-1">Puy-de-Dôme</div>
-                        </div>
-                    </a>
-                    
-                    <a href="etancheite-rhone.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">69</div>
-                            <div class="text-xs font-semibold text-gray-700 mt-1">Rhône</div>
-                        </div>
-                    </a>
-                    
-                    <!-- SAVOIE EN VEDETTE -->
-                    <a href="etancheite-savoie.html" class="dept-card group relative p-4 bg-gradient-to-br from-amber-100 to-orange-100 hover:from-amber-200 hover:to-orange-200 rounded-xl border-2 border-amber-400 hover:border-amber-500 transition-all duration-300 hover:scale-110 hover:shadow-2xl">
-                        <div class="absolute -top-2 -right-2 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center shadow-lg" style="animation: pulse 2s ease-in-out infinite;">
-                            <i class="fas fa-star text-white text-xs"></i>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-amber-600 group-hover:scale-110 transition-transform">73</div>
-                            <div class="text-xs font-bold text-amber-700 mt-1">Savoie</div>
-                            <div class="text-[10px] text-amber-600 mt-0.5">🏢 Siège</div>
-                        </div>
-                    </a>
-                    
-                    <a href="etancheite-haute-savoie.html" class="dept-card group relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                        <div class="text-center">
-                            <div class="text-3xl font-black text-blue-600 group-hover:scale-110 transition-transform">74</div>
-                            <div class="text-xs font-semibold text-gray-700 mt-1">Haute-Savoie</div>
-                        </div>
-                    </a>
-                    
+
+        <div class="grid lg:grid-cols-3 gap-6 max-w-7xl mx-auto mb-8">
+            <article class="zone-card zone-card--main">
+                <header class="zone-card__head">
+                    <span class="zone-num">73</span>
+                    <div><h3>Savoie</h3><p class="zone-tag">Siège · Chignin</p></div>
+                </header>
+                <p class="zone-desc">Notre territoire d'origine : de la vallée aux stations de haute altitude.</p>
+                <div class="zone-group"><span class="zone-label"><i class="fas fa-city" aria-hidden="true"></i> Villes</span><div class="zone-chips"><a href="etancheur-chambery.html" class="zone-chip ">Chambéry</a><a href="etancheur-aix-les-bains.html" class="zone-chip ">Aix-les-Bains</a><a href="etancheur-albertville.html" class="zone-chip ">Albertville</a></div></div>
+                <div class="zone-group"><span class="zone-label"><i class="fas fa-mountain" aria-hidden="true"></i> Stations</span><div class="zone-chips"><a href="etancheite-courchevel.html" class="zone-chip zone-chip--sta">Courchevel</a><a href="etancheite-meribel.html" class="zone-chip zone-chip--sta">Méribel</a><a href="etancheite-val-thorens.html" class="zone-chip zone-chip--sta">Val Thorens</a><a href="etancheite-tignes.html" class="zone-chip zone-chip--sta">Tignes</a><a href="etancheite-la-plagne.html" class="zone-chip zone-chip--sta">La Plagne</a><a href="etancheite-les-arcs.html" class="zone-chip zone-chip--sta">Les Arcs</a></div></div>
+                <div class="zone-group"><span class="zone-label"><i class="fas fa-trophy" aria-hidden="true"></i> Nos références</span><ul class="zone-refs"><li><a href="realisation-centre-routier-saint-etienne-de-cuines.html"><i class="fas fa-circle-check" aria-hidden="true"></i>Centre routier départemental</a></li><li><a href="realisation-le-link-chambery.html"><i class="fas fa-circle-check" aria-hidden="true"></i>Le Link, Chambéry</a></li></ul></div>
+                <a href="etancheite-savoie.html" class="zone-cta">Étanchéité en Savoie <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </article>
+            <article class="zone-card">
+                <header class="zone-card__head">
+                    <span class="zone-num">38</span>
+                    <div><h3>Isère</h3><p class="zone-tag">Grenoble & Oisans</p></div>
+                </header>
+                <p class="zone-desc">Métropole grenobloise, campus universitaires et stations de l'Oisans.</p>
+                <div class="zone-group"><span class="zone-label"><i class="fas fa-city" aria-hidden="true"></i> Villes</span><div class="zone-chips"><a href="etancheur-grenoble.html" class="zone-chip ">Grenoble</a><a href="etancheur-saint-martin-d-heres.html" class="zone-chip ">Saint-Martin-d'Hères</a><a href="etancheur-gieres.html" class="zone-chip ">Gières</a></div></div>
+                <div class="zone-group"><span class="zone-label"><i class="fas fa-mountain" aria-hidden="true"></i> Stations</span><div class="zone-chips"><a href="etancheite-alpe-huez.html" class="zone-chip zone-chip--sta">Alpe d'Huez</a><a href="etancheite-les-2-alpes.html" class="zone-chip zone-chip--sta">Les 2 Alpes</a></div></div>
+                <div class="zone-group"><span class="zone-label"><i class="fas fa-trophy" aria-hidden="true"></i> Nos références</span><ul class="zone-refs"><li><a href="realisation-josephine-baker.html"><i class="fas fa-circle-check" aria-hidden="true"></i>Résidence Joséphine Baker</a></li><li><a href="realisation-student-factory.html"><i class="fas fa-circle-check" aria-hidden="true"></i>Student Factory</a></li><li><a href="realisation-jandri-les-2-alpes.html"><i class="fas fa-circle-check" aria-hidden="true"></i>Jandri, Les 2 Alpes</a></li></ul></div>
+                <a href="etancheite-isere.html" class="zone-cta">Étanchéité en Isère <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </article>
+            <article class="zone-card">
+                <header class="zone-card__head">
+                    <span class="zone-num">74</span>
+                    <div><h3>Haute-Savoie</h3><p class="zone-tag">Annecy & Mont-Blanc</p></div>
+                </header>
+                <p class="zone-desc">Bassin annécien, vallée de l'Arve et stations du Mont-Blanc.</p>
+                <div class="zone-group"><span class="zone-label"><i class="fas fa-city" aria-hidden="true"></i> Villes</span><div class="zone-chips"><a href="etancheur-annecy.html" class="zone-chip ">Annecy</a></div></div>
+                <div class="zone-group"><span class="zone-label"><i class="fas fa-mountain" aria-hidden="true"></i> Stations</span><div class="zone-chips"><a href="etancheite-chamonix.html" class="zone-chip zone-chip--sta">Chamonix</a><a href="etancheite-megeve.html" class="zone-chip zone-chip--sta">Megève</a></div></div>
+                <div class="zone-group"><span class="zone-label"><i class="fas fa-trophy" aria-hidden="true"></i> Nos références</span><ul class="zone-refs"><li><a href="realisation-edf-seyssel.html"><i class="fas fa-circle-check" aria-hidden="true"></i>Centrale hydroélectrique EDF</a></li></ul></div>
+                <a href="etancheite-haute-savoie.html" class="zone-cta">Étanchéité en Haute-Savoie <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </article>
+        </div>
+
+        <div class="zone-others max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-[1fr_auto] gap-6 items-start">
+                <div>
+                    <span class="zone-label"><i class="fas fa-map" aria-hidden="true"></i> Autres départements d'Auvergne-Rhône-Alpes</span>
+                    <div class="flex flex-wrap gap-2"><a href="etancheite-rhone.html" class="zone-dept"><b>69</b>Rhône</a><a href="etancheite-ain.html" class="zone-dept"><b>01</b>Ain</a><a href="etancheite-loire.html" class="zone-dept"><b>42</b>Loire</a><a href="etancheite-drome.html" class="zone-dept"><b>26</b>Drôme</a><a href="etancheite-ardeche.html" class="zone-dept"><b>07</b>Ardèche</a><a href="etancheite-haute-loire.html" class="zone-dept"><b>43</b>Haute-Loire</a><a href="etancheite-puy-de-dome.html" class="zone-dept"><b>63</b>Puy-de-Dôme</a><a href="etancheite-allier.html" class="zone-dept"><b>03</b>Allier</a><a href="etancheite-cantal.html" class="zone-dept"><b>15</b>Cantal</a></div>
+                </div>
+                <div>
+                    <span class="zone-label"><i class="fas fa-city" aria-hidden="true"></i> Autres villes</span>
+                    <div class="zone-chips"><a href="etancheur-lyon.html" class="zone-chip">Lyon</a><a href="etancheur-valence.html" class="zone-chip">Valence</a><a href="etancheur-saint-etienne.html" class="zone-chip">Saint-Étienne</a></div>
                 </div>
             </div>
         </div>
-        
-        <!-- Liens Rapides Villes & Stations -->
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-6">
-                
-                <!-- Villes Principales -->
-                <div class="bg-white rounded-xl shadow-lg p-6">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
-                        <i class="fas fa-city text-cyan-600 mr-2"></i>
-                        Villes Principales
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <a href="etancheur-annecy.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
-                            <span>Annecy</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheur-chambery.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
-                            <span>Chambéry</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheur-grenoble.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
-                            <span>Grenoble</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheur-lyon.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
-                            <span>Lyon</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheur-albertville.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
-                            <span>Albertville</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheur-aix-les-bains.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
-                            <span>Aix-les-Bains</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheur-valence.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
-                            <span>Valence</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheur-saint-etienne.html" class="group px-4 py-2 bg-white hover:bg-cyan-600 rounded-full text-xs font-semibold text-cyan-700 hover:text-blue-900 transition-all duration-300 border-2 border-cyan-300 hover:border-cyan-600 shadow-md hover:shadow-lg hover:scale-105 flex items-center gap-1 cursor-pointer">
-                            <span>Saint-Étienne</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Stations de Ski -->
-                <div class="bg-gradient-to-br from-blue-900 to-blue-700 rounded-xl shadow-lg p-6">
-                    <h3 class="text-lg font-bold text-white mb-4 flex items-center">
-                        <i class="fas fa-mountain text-cyan-300 mr-2"></i>
-                        Stations de Ski
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <a href="etancheite-les-2-alpes.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
-                            <span>Les 2 Alpes</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheite-courchevel.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
-                            <span>Courchevel</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheite-meribel.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
-                            <span>Méribel</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheite-la-plagne.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
-                            <span>La Plagne</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheite-alpe-huez.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
-                            <span>Alpe d'Huez</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheite-tignes.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
-                            <span>Tignes</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheite-val-thorens.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
-                            <span>Val Thorens</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheite-les-arcs.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
-                            <span>Les Arcs</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheite-megeve.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
-                            <span>Megève</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                        <a href="etancheite-chamonix.html" class="group px-4 py-2 bg-white/20 hover:bg-white rounded-full text-xs font-semibold text-white hover:text-blue-900 transition-all duration-300 border-2 border-white/40 hover:border-white shadow-md hover:shadow-xl hover:scale-105 backdrop-blur-sm flex items-center gap-1 cursor-pointer">
-                            <span>Chamonix</span>
-                            <i class="fas fa-arrow-right text-[8px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                        </a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
     </div>
 </section>
 
